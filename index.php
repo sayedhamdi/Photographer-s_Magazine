@@ -104,9 +104,4 @@
   <?php include "./includes/footer.php" ?>
 
   </body>
-<script src="js/ajax.js" integrity="" crossorigin="anonymous"></script>
-<script src="js/poper.js" integrity="" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="" crossorigin="anonymous"></script>
-<!-- our files -->
-<script type="text/javascript" src="js/main.js"></script>
 </html>
