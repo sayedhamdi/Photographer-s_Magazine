@@ -123,3 +123,14 @@ input{
 	color:#444444;
 	font-family: Nexa-Light;
 }
+
+
+.archive-date{
+	margin: 5% 0;
+	font-family: Nexa-Light;
+	font-size: 18px;
+}
+
+.archive-sperator-line{
+	width: 95%;
+}
