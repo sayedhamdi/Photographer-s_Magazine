@@ -13,11 +13,6 @@
 	src: url('../fonts/nexa/Nexa Light.otf');
 }
 
-
-body {
-	overflow-x: hidden;
-}
-
 .nav-link {
 	font-family: Nexa-Light;
 }
@@ -50,6 +45,12 @@ nav>button {
 
 .navbar-brand {
 	margin-left: 10rem;
+}
+
+.navbar-toggler:focus, .navbar-toggler:hover {
+    text-decoration: none;
+    border: 0;
+	outline: none;
 }
 
 .about-us {
@@ -184,6 +185,9 @@ input {
 
 
 @media (max-width:991px) {
+	.navbar-brand {
+		margin-left: 1rem;
+	}
 	.overlay {
 		width: 80%;
 		margin-top: calc(30	vh - 25px);

@@ -103,12 +103,12 @@
 </div>
 <div class="container  Third-Row">
   <div class="row  justify-content-md-center">
-    <div class="col-lg-5 col-md-5 col-sm-6 col-12">
+    <div class="col-lg-5 col-md-5 col-sm-6 col-6">
       <img src="img/bg-images/row_3_1.jpg" class="img-fluid" />
 
 
     </div>
-    <div class="col-lg-5 col-md-5 col-sm-6 col-12 ">
+    <div class="col-lg-5 col-md-5 col-sm-6 col-6 ">
       <img src="img/bg-images/row_3_2.jpg" class="img-fluid" />
 
     </div>
