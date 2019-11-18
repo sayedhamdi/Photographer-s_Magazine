@@ -42,7 +42,7 @@
       <h1 class="text-center Nexa-Bold">Exclusive</h1>
     </div>
   </div>
-  <div class="offset-md-1 offset-lg-4 col">
+  <div class="offset-md-0 offset-lg-4 col">
     <div class="row ">
 
       <div class="col-12 col-lg-4  col-md-6 col-sm-12">

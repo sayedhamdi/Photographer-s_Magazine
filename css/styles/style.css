@@ -126,7 +126,7 @@ nav>button {
 
 
 .exclusive {
-	margin-top: calc(60vw - 20px);
+	margin-top: calc(50vw - 20px);
 }
 
 
@@ -186,7 +186,7 @@ input {
 @media (max-width:991px) {
 	.overlay {
 		width: 80%;
-		margin-top: calc(70vh - 25px);
+		margin-top: calc(30	vh - 25px);
 		margin-left: calc(3vw + 30px);
 		font-size: 25px;
 	}
