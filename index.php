@@ -1,28 +1,29 @@
 <!-- Header -->
-  <?php include "./includes/header.php" ?>
+<?php include "./includes/header.php" ?>
 
 <!-- about us section -->
 <div class="container">
   <div class="row about-us">
-      <div class="col-lg-6 col-xs-12">
-        <h2 class="Nexa-Bold">About us</h2>
-          <p class="Nexa-Light">
-            <br>
-            PULCHART magazine is a pure artistic portrait photography magazine specialised in Editorial fashion, beauty, conceptual, fine art and fantasy.
-             <br>
-             <br>
-             <span class="Nexa-Bold">See More</span>
-           </p>
-      </div>
-      <div class="col-lg-6 col-xs-12">
-        <img src="img/bg-images/about_us.jpg" alt="" class="img-fluid" width="300px">
-      </div>
+    <div class=" about-us-text col-lg-6  col-md-6 col-sm-6 col-xs-6">
+      <h2 class="Nexa-Bold">About us</h2>
+      <p class="Nexa-Light">
+        <br>
+        PULCHART magazine is a pure artistic portrait photography magazine specialised in Editorial fashion, beauty,
+        conceptual, fine art and fantasy.
+        <br>
+        <br>
+        <span class="Nexa-Bold">See More</span>
+      </p>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 ">
+      <img src="img/bg-images/about_us.jpg" alt="" class="img-fluid" width="300px">
+    </div>
   </div>
 </div>
 <!-- first row -->
 <div class="container  First-Row">
   <div class="row  justify-content-md-center">
-    <div class="col-10">
+    <div class="col-12">
       <div class="parent">
         <img src="img/bg-images/first_row.jpg" class="img-fluid" />
         <p class="overlay Nexa-Bold">
@@ -36,44 +37,61 @@
 <!-- Exclusive --->
 
 <div class="container exclusive">
-  <div class="row justify-content-md-center">
+  <div class="row">
     <div class="col">
       <h1 class="text-center Nexa-Bold">Exclusive</h1>
     </div>
   </div>
-  <div class="row row justify-content-md-center">
-    <div class="col-4">
-      <img src="img/week_0/Hanen BEST OF.jpg" class="img-fluid" />
-      <p class="Nexa-Bold" >
-        Picture of the week
-      </p>
-    </div>
-    <div class="col-2">
-      <img src="img/week_0/Editorial.jpg" class="img-fluid" />
-      <p class="Nexa-Light" >
-        Editorial Best of 1
-      </p>
-      <img src="img/week_0/Editorial 2.jpeg" class="img-fluid" />
-      <p class="Nexa-Light" >
-        Editorial Best of 2
-      </p>
-    </div>
-    <div class="col-2">
-      <img src="img/week_0/ARCHIVE.jpeg" class="img-fluid" />
-      <p class="Nexa-Light" >
-        Archive Picture 1
-      </p>
-      <img src="img/week_0/ARCHIVE 2.JPG" class="img-fluid" />
-      <p class="Nexa-Light" >
-        Archive Picture 2
-      </p>
+  <div class="offset-md-1 offset-lg-4 col">
+    <div class="row ">
+
+      <div class="col-12 col-lg-4  col-md-6 col-sm-12">
+        <img src="img/week_0/Hanen BEST OF.jpg" class="img-fluid" />
+        <p class="Nexa-Bold">
+          Picture of the week
+        </p>
+      </div>
+
+      <div class="col-12 col-lg-4 col-md-6  col-sm-12">
+
+        <div class="row">
+          <div class="col">
+            <img src="img/week_0/Editorial.jpg" class="img-fluid" />
+            <p class="Nexa-Light">
+              Editorial Best of 1
+            </p>
+          </div>
+          <div class="col">
+            <img src="img/week_0/Editorial 2.jpeg" class="img-fluid" />
+            <p class="Nexa-Light">
+              Editorial Best of 2
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <img src="img/week_0/ARCHIVE.jpeg" class="img-fluid" />
+            <p class="Nexa-Light">
+              Archive Picture 1
+            </p>
+          </div>
+          <div class="col">
+            <img src="img/week_0/ARCHIVE 2.JPG" class="img-fluid" />
+            <p class="Nexa-Light">
+              Archive Picture 2
+            </p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
 </div>
 <hr>
 <div class="container  Second-Row">
   <div class="row  justify-content-md-center">
-    <div class="col-10">
+    <div class="col-12">
       <div class="parent">
         <img src="img/bg-images/second_row.jpg" class="img-fluid" />
         <p class="overlay Nexa-Bold">
@@ -85,23 +103,22 @@
 </div>
 <div class="container  Third-Row">
   <div class="row  justify-content-md-center">
-    <div class="col-5 ">
-        <img src="img/bg-images/row_3_1.jpg" class="img-fluid"/>
+    <div class="col-lg-5 col-md-5 col-sm-6 col-12">
+      <img src="img/bg-images/row_3_1.jpg" class="img-fluid" />
 
 
     </div>
-    <div class="col-5">
-      <img src="img/bg-images/row_3_2.jpg" class="img-fluid"/>
-
-    </div>
-    </div>
+    <div class="col-lg-5 col-md-5 col-sm-6 col-12 ">
+      <img src="img/bg-images/row_3_2.jpg" class="img-fluid" />
 
     </div>
   </div>
+
+</div>
+</div>
 </div>
 <br>
 <!-- footer start -->
-  <?php include "./includes/footer.php" ?>
+<?php include "./includes/footer.php" ?>
 
-  </body>
-
+</body>
