@@ -126,7 +126,7 @@ nav>button {
 
 
 .exclusive {
-	margin-top: calc(50vw - 20px);
+	margin-top: calc(70vw - 20px);
 }
 
 
@@ -192,7 +192,7 @@ input {
 	}
 
 	.Third-Row {
-		margin-top: 410px;
+		margin-top: 550px;
 	}
 }
 
@@ -217,6 +217,9 @@ input {
 		padding-bottom: 10%;
 		padding-left: 5%;
 		padding-right: 5%;
+	}
+	.Third-Row {
+		margin-top: 410px;
 	}
 }
 
