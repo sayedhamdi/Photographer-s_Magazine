@@ -13,7 +13,7 @@
   <body>
     <!-- navbar start -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-light">
-  <a class="navbar-brand Morva logo" href="../Photographer-s_Magazine-master">Pulchart</a>
+  <a class="navbar-brand Morva logo" href="../Photographer-s_Magazine">Pulchart</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -46,7 +46,7 @@
     <div class="flex-row">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="../Photographer-s_Magazine-master">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="../Photographer-s_Magazine">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
