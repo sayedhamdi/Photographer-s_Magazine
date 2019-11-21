@@ -223,7 +223,7 @@ input {
 		padding-right: 5%;
 	}
 	.Third-Row {
-		margin-top: 410px;
+		margin-top: calc(45vw + 10%);
 	}
 }
 
