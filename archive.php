@@ -13,7 +13,7 @@
         <?php
 
         $directory = './img/Pages/Archive';
-        $scanned_directory = scandir($directory);
+        $scanned_directory = scandir($directory,2);
         for ($i=2;$i<sizeof($scanned_directory);$i++){
         ?>
         <div class="row">
