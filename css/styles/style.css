@@ -17,6 +17,8 @@
 	font-family: Nexa-Light;
 }
 
+
+
 .Morva {
 	font-family: MORVA;
 }
@@ -51,6 +53,18 @@ nav>button {
     text-decoration: none;
     border: 0;
 	outline: none;
+}
+
+.dropdown-menu{
+	background-color: #0e0e0e !important;
+}
+
+.dropdown-item{
+	color: #fff !important;
+}
+
+.dropdown-item:hover{
+	background-color: #5d5d5d8c;
 }
 
 .about-us {
