@@ -1,6 +1,6 @@
 <!-- Header -->
 <?php include "./includes/header.php" ?>
-    
+
     <div class="form-group container">
         <div class="row" style="padding : 100px">
             <div class="col-md-4">
@@ -17,6 +17,6 @@
             </div>
         </div>
     </div>
-    
+
 <!-- footer start -->
 <?php include "./includes/footer.php" ?>
