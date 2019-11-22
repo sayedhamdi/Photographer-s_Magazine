@@ -1,6 +1,5 @@
 <!-- Header -->
 <?php include "./includes/header.php" ?>
-
 <body>
     <div class="container">
         <div class="archive-date">
@@ -11,10 +10,8 @@
             <hr class="archive-sperator-line">
         </div>
         <?php
-        $dir =
-
         $directory = './img/Pages/Photography/Archive';
-        $scanned_directory = scandir($directory);
+        $scanned_directory = array_diff(scandir($directory), array('..', '.'));
         for ($i=2;$i<sizeof($scanned_directory);$i++){
         ?>
         <div class="row">
@@ -37,7 +34,9 @@
                 </p>
             </div>
         </div>
+
       <?php $i+=3;}?>
+
     </div>
 
 </body>
