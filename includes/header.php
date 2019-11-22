@@ -1,11 +1,11 @@
-  
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Pulchart Magazine</title>
     <link  rel="stylesheet" href="css/styles/bootstrap.min.css" integrity="" crossorigin="anonymous">
-    <link  rel="stylesheet" href="css/styles/style.css" integrity=""> 
+    <link  rel="stylesheet" href="css/styles/style.css" integrity="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 
