@@ -12,7 +12,7 @@
         conceptual, fine art and fantasy.
         <br>
         <br>
-        <span class="Nexa-Bold">See More</span>
+        <span class="Nexa-Bold"><a href="about.php">See More</a></span>
       </p>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 ">
