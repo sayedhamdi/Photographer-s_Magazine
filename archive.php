@@ -3,10 +3,10 @@
 <body>
     <div class="container">
         <div class="archive-date">
-            <span >    
+            <span >
                 The 17th of November 2019
             </span>
-            
+
             <hr class="archive-sperator-line">
         </div>
         <div class="row">
@@ -47,7 +47,7 @@
     </div>
 
 </body>
-    
-    
+
+
 <!-- footer start -->
 <?php include "./includes/footer.php" ?>

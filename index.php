@@ -1,4 +1,4 @@
-<!-- Header  hh-->
+<!-- Header  -->
 <?php include "./includes/header.php" ?>
 
 <!-- about us section -->
@@ -42,11 +42,10 @@
       <h1 class="text-center Nexa-Bold">Exclusive</h1>
     </div>
   </div>
-  <div class="offset-md-0 offset-lg-4 col">
+  <div class="offset-md-0 offset-lg-2">
     <div class="row ">
-
       <div class="col-12 col-lg-4  col-md-6 col-sm-12">
-        <img src="img/week_0/Hanen BEST OF.jpg" class="img-fluid" />
+        <img src="img/Pages/Acceuil/Hanen BEST OF.jpg" class="img-fluid" />
         <p class="Nexa-Bold">
           Picture of the week
         </p>
@@ -56,13 +55,13 @@
 
         <div class="row">
           <div class="col">
-            <img src="img/week_0/Editorial.jpg" class="img-fluid" />
+            <img src="img/Pages/Acceuil/Editorial.jpg" class="img-fluid" />
             <p class="Nexa-Light">
               Editorial Best of 1
             </p>
           </div>
           <div class="col">
-            <img src="img/week_0/Editorial 2.jpeg" class="img-fluid" />
+            <img src="img/Pages/Acceuil/Editorial 2.jpeg" class="img-fluid" />
             <p class="Nexa-Light">
               Editorial Best of 2
             </p>
@@ -71,13 +70,13 @@
 
         <div class="row">
           <div class="col">
-            <img src="img/week_0/ARCHIVE.jpeg" class="img-fluid" />
+            <img src="img/Pages/Acceuil/ARCHIVE.jpeg" class="img-fluid" />
             <p class="Nexa-Light">
               Archive Picture 1
             </p>
           </div>
           <div class="col">
-            <img src="img/week_0/ARCHIVE 2.JPG" class="img-fluid" />
+            <img src="img/Pages/Acceuil/ARCHIVE 2.JPG" class="img-fluid" />
             <p class="Nexa-Light">
               Archive Picture 2
             </p>
