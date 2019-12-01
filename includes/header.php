@@ -21,7 +21,7 @@
     </button>
     <div class="collapse navbar-collapse flex-column " id="navbarSupportedContent">
       <div class="flex-row">
-        <ul class="navbar-nav mr-auto">
+        <ul class="social-nav navbar-nav mr-auto">
           <li class="nav-item">
             <a class="nav-link" href="#"> <img src="img/icons/facebook.png" alt="" width="25rem"> </a>
           </li>
@@ -29,20 +29,14 @@
             <a class="nav-link" href="#"> <img src="img/icons/insta.png" alt="" width="25rem"> </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"> <img src="img/icons/linkedin.png" alt="" width="25rem"> </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"> <img src="img/icons/twitter.png" alt="" width="25rem"> </a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="#"> <img src="img/icons/youtube.png" alt="" width="25rem"> </a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="#"> <img src="img/icons/profile.png" alt="" width="25rem"> </a>
           </li>
           <li class="nav-item active">
             <a class="nav-link Nexa-Bold" href="#">Profile <span class="sr-only">(current)</span></a>
-          </li>
+          </li> -->
         </ul>
       </div>
       <div class="flex-row">

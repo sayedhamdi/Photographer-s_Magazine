@@ -18,19 +18,19 @@
         ?>
         <div class="row">
             <div class="col-md-4">
-                <img class="img-fluid" src='<?php echo $directory.'/'.$scanned_directory[$i]?> '/>
+                <img class="img-fluid lazyestload" src='<?php echo $directory.'/'.$scanned_directory[$i]?> '/>
                 <p class='Nexa-light'>
                     Archive Picture 1
                 </p>
             </div>
             <div class="col-md-4">
-                <img class="img-fluid" src='<?php echo $directory.'/'.$scanned_directory[$i+1]?>'/>
+                <img class="img-fluid lazyestload " src='<?php echo $directory.'/'.$scanned_directory[$i+1]?>'/>
                 <p class='Nexa-light'>
                     Archive Picture 2
                 </p>
             </div>
             <div class="col-md-4">
-                <img class="img-fluid" src='<?php echo $directory.'/'.$scanned_directory[$i+2]?>'/>
+                <img class="img-fluid lazyestload" src='<?php echo $directory.'/'.$scanned_directory[$i+2]?>'/>
                 <p class='Nexa-light'>
                     Archive Picture 3
                 </p>

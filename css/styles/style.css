@@ -67,6 +67,13 @@ nav>button {
 	background-color: #5d5d5d8c;
 }
 
+.social-nav{
+	display: inline-block;
+}
+.social-nav>li{
+	display: inline-block;
+}
+
 .about-us {
 	margin-top: 6rem;
 	margin-left: 7rem;
@@ -88,6 +95,7 @@ nav>button {
 
 
 @media (max-width:768px) {
+	
 	.about-us {
 		margin-left: 0;
 	}
@@ -203,8 +211,11 @@ input {
 
 
 @media (max-width:991px) {
+	.social-nav>li{
+		margin: 0 5px 0 3px;
+	}
 	.navbar-brand {
-		margin-left: 1rem;
+		margin-left: 0rem;
 	}
 	.overlay {
 		width: 80%;
