@@ -1,22 +1,36 @@
 <!-- Header -->
 <?php include "./includes/header.php" ?>
-
-    <div class="form-group container">
-        <div class="row" style="padding : 100px">
+<style>
+.col-md-4>a>img{
+    width: 300px;
+    height: 80%;
+    margin: 15px;
+    object-fit: cover;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="row text-center" style="padding : 100px">
             <div class="col-md-4">
-                <img src="./img/bg-images/Exclusive_1.jpg" width="90%" height="100%">
-                <h5 class="text-center">Exclusive 1</h5>
+            <a href="./img/bg-images/Exclusive_1.jpg" target="_blank">
+                <img class="img-fluid" src="./img/bg-images/Exclusive_1.jpg">
+            </a>
+                <h5>Exclusive 1</h5>
             </div>
             <div class="col-md-4">
-                <img src="./img/bg-images/Exclusive_2.jpg" width="90%" height="100%">
-                <h5 class="text-center">Exclusive 2</h5>
+            <a href="./img/bg-images/Exclusive_2.jpg" target="_blank">
+                <img class="img-fluid" src="./img/bg-images/Exclusive_2.jpg">
+            </a>                
+            <h5>Exclusive 2</h5>
             </div>
             <div class="col-md-4">
-                <img src="./img/bg-images/Exclusive_3.jpg" width="90%" height="100%">
-                <h5 class="text-center">Exclusive 3</h5>
+            <a href="./img/bg-images/Exclusive_3.jpg" target="_blank">
+                <img class="img-fluid" src="./img/bg-images/Exclusive_3.jpg">
+            </a>
+            <h5>Exclusive 3</h5>
             </div>
         </div>
     </div>
-
+</body>
 <!-- footer start -->
 <?php include "./includes/footer.php" ?>

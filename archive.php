@@ -1,5 +1,13 @@
 <!-- Header -->
 <?php include "./includes/header.php" ?>
+<style>
+    .col-md-4>a>img {
+        width: 300px;
+        height: 80%;
+        margin: 15px;
+        object-fit: cover;
+    }
+</style>
 
 <body>
     <div class="container">
@@ -16,27 +24,35 @@
         $scanned_directory = array_diff(scandir($directory), array('..', '.'));
         for ($i=2;$i<sizeof($scanned_directory);$i++){
         ?>
-        <div class="row">
+        <div class="row text-center">
             <div class="col-md-4">
-                <img class="img-fluid lazyestload" src='<?php echo $directory.'/'.$scanned_directory[$i]?> '/>
-                <p class='Nexa-light'>
+                <a href='<?php echo $directory.'/'.$scanned_directory[$i]?> ' target="_blank">
+                    <img class="img-responsive lazyestload" src='<?php echo $directory.'/'.$scanned_directory[$i]?> ' />
+                </a>
+                <h5>
                     Archive Picture 1
-                </p>
+                </h5>
             </div>
             <div class="col-md-4">
-                <img class="img-fluid lazyestload " src='<?php echo $directory.'/'.$scanned_directory[$i+1]?>'/>
-                <p class='Nexa-light'>
+                <a href='<?php echo $directory.'/'.$scanned_directory[$i+1]?> ' target="_blank">
+                    <img class="img-responsive lazyestload"
+                        src='<?php echo $directory.'/'.$scanned_directory[$i+1]?> ' />
+                </a>
+                <h5>
                     Archive Picture 2
-                </p>
+                </h5>
             </div>
             <div class="col-md-4">
-                <img class="img-fluid lazyestload" src='<?php echo $directory.'/'.$scanned_directory[$i+2]?>'/>
-                <p class='Nexa-light'>
+                <a href='<?php echo $directory.'/'.$scanned_directory[$i+2]?> ' target="_blank">
+                    <img class="img-responsive lazyestload"
+                        src='<?php echo $directory.'/'.$scanned_directory[$i+2]?> ' />
+                </a>
+                <h5>
                     Archive Picture 3
-                </p>
+                </h5>
             </div>
         </div>
-      <?php $i+=3;}?>
+        <?php $i+=3;}?>
     </div>
 
 </body>
