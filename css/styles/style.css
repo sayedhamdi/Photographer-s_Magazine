@@ -205,12 +205,21 @@ input {
 	width: 95%;
 }
 
+.col-md-4>a>img{
+    width: 300px;
+    height: 80%;
+    object-fit: cover;
+}
+
 .img-title{
 	text-align: center;
 }
 
 
 @media (max-width:991px) {
+	.col-md-4>a>img{
+		width: 100% !important;
+	}
 	.social-nav>li{
 		margin: 0 5px 0 3px;
 	}

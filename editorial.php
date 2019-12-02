@@ -1,13 +1,5 @@
 <!-- Header -->
 <?php include "./includes/header.php" ?>
-<style>
-.col-md-4>a>img{
-    width: 300px;
-    height: 80%;
-    margin: 15px;
-    object-fit: cover;
-}
-</style>
 <body>
 <div class="container">
     <?php

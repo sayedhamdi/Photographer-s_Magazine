@@ -1,18 +1,12 @@
 <!-- Header -->
 <?php include "./includes/header.php" ?>
-<style>
-.col-md-4>a>img{
-    width: 300px;
-    height: 80%;
-    margin: 15px;
-    object-fit: cover;
-}
-</style>
 <body>
 <div class="row text-center" style="padding : 100px">
     <?php for ( $i=0 ; $i<=2 ; $i++ ) { ?>
         <div class="col-md-4">
+            <a href="./img/Pages/Photography/Best of/Hanen (1).jpg" target="_blank">
                 <img src="./img/Pages/Photography/Best of/Hanen (1).jpg">
+            </a>
                 <p> Hanen </p>
         </div>
     <?php } ?>

@@ -1,14 +1,5 @@
 <!-- Header -->
 <?php include "./includes/header.php" ?>
-<style>
-    .col-md-4>a>img {
-        width: 370px;
-        height: 90%;
-        margin: 15px;
-        object-fit: cover;
-    }
-</style>
-
 <body>
     <div class="container">
         <div class="archive-date">
