@@ -1,7 +1,8 @@
 <!-- Header -->
 <?php include "./includes/header.php" ?>
 <body>
-<div class="row text-center" style="padding : 100px">
+<div class="container">
+<div class="row text-center">
     <?php for ( $i=0 ; $i<=2 ; $i++ ) { ?>
         <div class="col-md-4">
             <a href="./img/Pages/Photography/Best of/Hanen (1).jpg" target="_blank">
@@ -10,6 +11,7 @@
                 <p> Hanen </p>
         </div>
     <?php } ?>
+</div>
 </div>
 </body>
 <!-- footer start -->
