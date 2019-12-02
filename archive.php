@@ -1,7 +1,7 @@
 <!-- Header -->
 <?php include "./includes/header.php" ?>
 <body>
-    <div class="container">
+    <div class="container img-container">
         <div class="archive-date">
             <span>
                 The 17th of November 2019

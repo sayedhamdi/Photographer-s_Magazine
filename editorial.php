@@ -1,7 +1,7 @@
 <!-- Header -->
 <?php include "./includes/header.php" ?>
 <body>
-<div class="container">
+<div class="container img-container ">
     <?php
       $directory = './img/Pages/Photography/Editorial/';
       $scanned_directory =array_diff(scandir($directory), array('..', '.'));

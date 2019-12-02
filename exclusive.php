@@ -1,8 +1,8 @@
 <!-- Header -->
 <?php include "./includes/header.php" ?>
 <body>
-    <div class="container">
-        <div class="row text-center" style="padding : 100px">
+    <div class="container img-container">
+        <div class="row text-center">
             <div class="col-md-4">
             <a href="./img/bg-images/Exclusive_1.jpg" target="_blank">
                 <img class="img-fluid" src="./img/bg-images/Exclusive_1.jpg">
