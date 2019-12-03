@@ -1,5 +1,7 @@
 <!-- Header -->
 <?php include "./includes/header.php" ?>
+<?php include "./includes/db_cnx.php" ?>
+
 <body>
     <div class="container img-container">
         <div class="archive-date">
@@ -9,41 +11,25 @@
 
             <hr class="archive-sperator-line">
         </div>
-        <?php
-
-        $directory = './img/Pages/Archive';
-        $scanned_directory = array_diff(scandir($directory), array('..', '.'));
-        for ($i=2;$i<sizeof($scanned_directory);$i++){
-        ?>
         <div class="row text-center">
+        <?php
+            $res = mysqli_query($conn,'select dir,name from image');
+            $i=1;
+            while($row = mysqli_fetch_array($res)){ 
+        ?>
             <div class="col-md-4">
-                <a href='<?php echo $directory.'/'.$scanned_directory[$i]?> ' target="_blank">
-                    <img class="img-responsive lazyestload" src='<?php echo $directory.'/'.$scanned_directory[$i]?> ' />
+                <a href='<?php echo $row['dir']?> ' target="_blank">
+                    <img class="img-responsive lazyestload" src='<?php echo $row['dir']?> ' />
                 </a>
                 <h5>
-                    Archive Picture 1
+                <?php echo $row['name']?>
                 </h5>
             </div>
-            <div class="col-md-4">
-                <a href='<?php echo $directory.'/'.$scanned_directory[$i+1]?> ' target="_blank">
-                    <img class="img-responsive lazyestload"
-                        src='<?php echo $directory.'/'.$scanned_directory[$i+1]?> ' />
-                </a>
-                <h5>
-                    Archive Picture 2
-                </h5>
-            </div>
-            <div class="col-md-4">
-                <a href='<?php echo $directory.'/'.$scanned_directory[$i+2]?> ' target="_blank">
-                    <img class="img-responsive lazyestload"
-                        src='<?php echo $directory.'/'.$scanned_directory[$i+2]?> ' />
-                </a>
-                <h5>
-                    Archive Picture 3
-                </h5>
-            </div>
+        <?php if($i % 3 == 0) echo('</div>
+        <div class="row text-center">');
+                $i++;
+        }?>
         </div>
-        <?php $i+=3;}?>
     </div>
 
 </body>
