@@ -13,7 +13,7 @@
         </div>
         <div class="row text-center">
         <?php
-            $res = mysqli_query($conn,'select dir,name from image');
+            $res = mysqli_query($conn,'select dis,name from image,photographe where image.id = photographe ');
             $i=1;
             while($row = mysqli_fetch_array($res)){ 
         ?>
