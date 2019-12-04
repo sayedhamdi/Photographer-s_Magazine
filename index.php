@@ -2,7 +2,7 @@
 <?php include "./includes/header.php" ?>
 
 <!-- about us section -->
-<div class="container">
+<div class="container" style="margin-bottom:30px">
   <div class="row about-us">
     <div class=" about-us-text col-lg-6  col-md-6 col-sm-6 col-xs-6">
       <h2 class="Nexa-Bold">About us</h2>
@@ -10,9 +10,9 @@
         <br>
         PULCHART magazine is a pure artistic portrait photography magazine specialised in Editorial fashion, beauty,
         conceptual, fine art and fantasy.
-        <br>
-        <br>
-        <span class="Nexa-Bold"><a href="about.php">See More</a></span>
+      <span class="Nexa-Bold" style="display:block; padding:10px; font-size:calc(.2rem + 1.2vw">
+        <a href="about.php" style="color:#121415b0">Read More ...</a>
+      </span>
       </p>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 ">
@@ -26,7 +26,7 @@
 <div class="container  First-Row">
   <div class="row  justify-content-md-center">
     <div class="col-12">
-      <div class="parent">
+      <div class="">
       <a href="img/bg-images/first_row.jpg" target="_blank">
         <img src="img/bg-images/first_row.jpg" class="img-fluid" />
       </a>
@@ -49,7 +49,7 @@
     <div class="row ">
       <div class="col-12 col-lg-6  col-md-6 col-sm-12">
       <a href="img/Pages/Acceuil/Hanen BEST OF.jpg" target="_blank">
-        <img src="img/Pages/Acceuil/Hanen BEST OF.jpg" class="img-fluid" />
+        <img src="img/Pages/Acceuil/Hanen BEST OF.jpg" class="img-fluid of-the-week" />
       </a>
         <p class="Nexa-Bold">
           Picture of the week
@@ -61,7 +61,7 @@
         <div class="row">
           <div class="col">
           <a href="img/Pages/Acceuil/Editorial.jpg" target="_blank">
-            <img src="img/Pages/Acceuil/Editorial.jpg" class="img-fluid" />
+            <img src="img/Pages/Acceuil/Editorial.jpg" class="img-fluid best-of" />
           </a>
             <p class="Nexa-Light">
               Editorial Best of 1
@@ -69,7 +69,7 @@
           </div>
           <div class="col">
           <a href="img/Pages/Acceuil/Editorial 2.jpeg" target="_blank">
-            <img src="img/Pages/Acceuil/Editorial 2.jpeg" class="img-fluid" />
+            <img src="img/Pages/Acceuil/Editorial 2.jpeg" class="img-fluid best-of" />
           </a>
             <p class="Nexa-Light">
               Editorial Best of 2
@@ -80,7 +80,7 @@
         <div class="row">
           <div class="col">
           <a href="img/Pages/Acceuil/ARCHIVE.jpeg" target="_blank">
-            <img src="img/Pages/Acceuil/ARCHIVE.jpeg" class="img-fluid" />
+            <img src="img/Pages/Acceuil/ARCHIVE.jpeg" class="img-fluid best-of" />
           </a>
             <p class="Nexa-Light">
               Archive Picture 1
@@ -88,7 +88,7 @@
           </div>
           <div class="col">
           <a href="img/Pages/Acceuil/ARCHIVE 2.JPG" target="_blank">
-            <img src="img/Pages/Acceuil/ARCHIVE 2.JPG" class="img-fluid" />
+            <img src="img/Pages/Acceuil/ARCHIVE 2.JPG" class="img-fluid best-of" />
           </a>
             <p class="Nexa-Light">
               Archive Picture 2
@@ -104,7 +104,7 @@
 <div class="container  Second-Row">
   <div class="row  justify-content-md-center">
     <div class="col-12">
-      <div class="parent">
+      <div class="">
       <a href="img/bg-images/second_row.jpg" target="_blank">
         <img src="img/bg-images/second_row.jpg" class="img-fluid" />
       </a>
