@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  mar. 03 déc. 2019 à 00:16
+-- Généré le :  mer. 04 déc. 2019 à 09:14
 -- Version du serveur :  5.7.17
 -- Version de PHP :  5.6.30
 
@@ -21,6 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `pulchart`
 --
+CREATE DATABASE IF NOT EXISTS `pulchart` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `pulchart`;
 
 -- --------------------------------------------------------
 
