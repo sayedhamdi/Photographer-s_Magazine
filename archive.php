@@ -1,6 +1,5 @@
 <!-- Header -->
 <?php include "./includes/header.php" ?>
-<?php include "./includes/db_cnx.php" ?>
 
 <body>
     <div class="container img-container">

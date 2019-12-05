@@ -75,3 +75,4 @@
       </div>
     </div>
   </nav>
+  <?php include "./includes/db_cnx.php" ?>
