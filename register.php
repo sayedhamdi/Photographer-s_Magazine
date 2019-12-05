@@ -1,5 +1,6 @@
 <?php include "./includes/header.php" ?>
 
+
     <form action="" method="POST" style="padding: 70px 250px ; text-align:center">
         <div class="row">
             <div class="col-md-6">

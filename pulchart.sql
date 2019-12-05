@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  mer. 04 déc. 2019 à 10:09
+-- Généré le :  jeu. 05 déc. 2019 à 22:18
 -- Version du serveur :  10.1.37-MariaDB
 -- Version de PHP :  7.2.12
 
@@ -19,10 +19,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données :  `pulchart1`
+-- Base de données :  `pulchart`
 --
-CREATE DATABASE IF NOT EXISTS `pulchart1` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `pulchart1`;
+CREATE DATABASE IF NOT EXISTS `pulchart` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `pulchart`;
 
 -- --------------------------------------------------------
 
@@ -98,22 +98,26 @@ INSERT INTO `image` (`id`, `dis`, `owner`) VALUES
 CREATE TABLE `photographe` (
   `id` int(11) NOT NULL,
   `lastname` varchar(20) NOT NULL,
-  `firstname` varchar(20) NOT NULL
+  `firstname` varchar(20) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `country` varchar(20) NOT NULL,
+  `date` date NOT NULL,
+  `level` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `photographe`
 --
 
-INSERT INTO `photographe` (`id`, `lastname`, `firstname`) VALUES
-(1, 'Boulabiar', 'Hathem'),
-(2, 'Hassani', 'Salah'),
-(3, 'Souhayl', 'Hanen'),
-(4, 'Ncib', 'Houcin'),
-(5, 'Sahbi', 'Siraj'),
-(6, '', 'Hanen'),
-(7, 'Ben Omrane', 'Nour'),
-(8, 'Guesmi', 'Narjes');
+INSERT INTO `photographe` (`id`, `lastname`, `firstname`, `email`, `country`, `date`, `level`) VALUES
+(1, 'Boulabiar', 'Hathem', '', '', '0000-00-00', ''),
+(2, 'Hassani', 'Salah', '', '', '0000-00-00', ''),
+(3, 'Souhayl', 'Hanen', '', '', '0000-00-00', ''),
+(4, 'Ncib', 'Houcin', '', '', '0000-00-00', ''),
+(5, 'Sahbi', 'Siraj', '', '', '0000-00-00', ''),
+(6, '', 'Hanen', '', '', '0000-00-00', ''),
+(7, 'Ben Omrane', 'Nour', '', '', '0000-00-00', ''),
+(8, 'Guesmi', 'Narjes', '', '', '0000-00-00', '');
 
 --
 -- Index pour les tables déchargées
