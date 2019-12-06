@@ -10,13 +10,14 @@
                 $country = $_POST ['country'] ; 
                 $date = $_POST ['date'] ; 
                 $level = $_POST ['level'] ; 
+                $password = $_POST ['password'] ;
 
                 $query = "SELECT email FROM photographe WHERE email LIKE '$email'" ; 
                 $result = mysqli_query ($conn,$query) ;
                 $num = mysqli_num_rows ($result) ; 
 
                 if ( $num == 0 ) {
-                    $query  = "INSERT INTO photographe(firstname,lastname,email,country,date,level) VALUES ('$fname','$lname','$email','$country','$date','$level') ";
+                    $query  = "INSERT INTO photographe(firstname,lastname,email,country,date,level,password) VALUES ('$fname','$lname','$email','$country','$date','$level','$password') ";
                     $result = mysqli_query ($conn,$query) ;
                     if (!$result)
                         die ('QUERY FAILED'.mysqli_error()) ;
@@ -58,7 +59,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="country">  Country : </label>
-                    <input type="text" name="country" id="country" class="form-control" required>
+                    <select class="selectpicker countrypicker"></select>
                 </div>
             </div>
             <div class="col-md-6">
@@ -82,6 +83,20 @@
                 </div>
             </div>
             <div class="col-md-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="password"> Password :  </label>
+                    <input type="password" name="password" class="form-control" required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="password"> Confirm Password :  </label>
+                    <input type="password" name="" class="form-control" >
+                </div>
+            </div>
         </div>
         <div class="row">
             <div class="col-md-4"></div>
