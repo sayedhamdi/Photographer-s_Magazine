@@ -1,11 +1,10 @@
 //Regex Init
 const RegexAlphab = /^[a-zA-Z]*$/
-const RegexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+// const RegexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 const RegexDate = /^(0[1-9]|1[0-2])\/(0[1-9]|1\d|2\d|3[01])\/(19|20)\d{2}$/
 const RegexDigit = /[0-9]/
 const RegexChar = /[a-zA-Z]/
-//todo reinit errors && check length  according to db && fix span append
-// add helpers and placeholer 
+//todo add helpers and placeholer 
 
 function validate(){
     const fname = document.getElementById('firstname')
