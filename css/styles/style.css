@@ -113,13 +113,15 @@ nav>button {
 	text-align: center;
 }
 
-.best-of{
+.best-of {
 	max-height: 350px;
 	/* width: 250px; */
 }
-.of-the-week{
+
+.of-the-week {
 	max-height: 750px;
 }
+
 .footer {
 	background-color: black;
 }
@@ -181,6 +183,26 @@ input {
 }
 
 
+/* register style start */
+
+.form-control:focus,
+.form-control:hover {
+	outline: none;
+	border-color: inherit;
+	box-shadow: none;
+}
+
+.form-control {
+	border: none;
+	border-bottom: 1px solid black;
+	border-radius: 1px;
+	padding: 10px;
+	margin: -10px 0px 30px 10px;
+}
+.form-group>.sign{
+	width: 25%;
+    margin: 0 auto;
+}
 @media (max-width:991px) {
 	.col-md-4>a>img {
 		width: 100% !important;
