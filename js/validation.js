@@ -1,7 +1,7 @@
 //Regex Init
 const RegexAlphab = /^[a-zA-Z]*$/
 // const RegexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-const RegexDate = /^(0[1-9]|1[0-2])\/(0[1-9]|1\d|2\d|3[01])\/(19|20)\d{2}$/
+const RegexDate = /^((19|20)\d{2}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01]))$/
 const RegexDigit = /[0-9]/
 const RegexChar = /[a-zA-Z]/
 //todo add helpers and placeholer 
@@ -22,11 +22,11 @@ function validate(){
         'password1':'',
         'password2':''
 }
-    if (!RegexAlphab.test(fname.value) || fname.value.length == 0){
+    if (!RegexAlphab.test(fname.value) || fname.value.length == 0 || fname.value.length > 20 ){
         errors['firstname'] = 'Please enter a valid First name';
     }
     
-    if (!RegexAlphab.test(lname.value) || lname.value.length == 0 ){
+    if (!RegexAlphab.test(lname.value) || lname.value.length == 0  || lname.value.length > 20  ){
         errors['lastname'] = 'Please enter a valid Last name';
 
     }
@@ -36,7 +36,7 @@ function validate(){
 
     }
 
-    if (email.value.length == 0){
+    if (email.value.length == 0  || email.value.length > 100 ){
         errors['email'] = "Please enter a valid email"
     }
     
