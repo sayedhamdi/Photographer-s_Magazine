@@ -196,12 +196,26 @@ input {
 	border: none;
 	border-bottom: 1px solid black;
 	border-radius: 1px;
-	padding: 10px;
+	padding: 5px;
 	margin: -10px 0px 30px 10px;
 }
-.form-group>.sign{
-	width: 25%;
+.form-group>.sign, .form-group>.sign:hover, .form-group>.sign:focus {
+	width: 20%;
     margin: 0 auto;
+    border: none;
+    font-family: Nexa-Ligth;
+    padding: 0;
+    background-color: #080513d9;
+	border-radius: 5px;	
+	color: white;
+}
+
+.input-error{
+	display: block;
+    margin-top: -15px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    color: #ad1106;
 }
 @media (max-width:991px) {
 	.col-md-4>a>img {
