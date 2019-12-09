@@ -63,10 +63,13 @@
 
                 if ( $num == 0 && $valid ) {
                     $stmt =  $conn->prepare("INSERT INTO photographe(firstname,lastname,email,country,date,level,password) VALUES (?,?,?,?,?,?,?)") ; 
-                    $stmt->bind_param('sssssss',$fanme,$lname,$email,$country,$date,$level,$password1);
-                   
-                    if (! $stmt->execute())
-                        die ('QUERY FAILED'.mysqli_error()) ;
+                    // hash the password
+                    $password1 = password_hash($password1,PASSWORD_DEFAULT);
+
+                    $stmt->bind_param('sssssss',$fname,$lname,$email,$country,$date,$level,$password1);
+                    
+                    if (!$stmt->execute())
+                        echo ('QUERY FAILED'.mysqli_error()) ;
                     else 
                         header("location: login.php");       
                 } 
