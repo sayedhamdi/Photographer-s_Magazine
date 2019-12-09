@@ -18,12 +18,12 @@
                 
                 $valid = True;
 
-                if ( !preg_match($RegexAlphab, $fname) || strlen($fname) == 0  || strlen($fname) >20 ){
+                if ( !preg_match($RegexAlphab, $fname) || trim($fname)==""  || strlen($fname) >20 ){
                     $valid = False;
                     echo "<h6 class='alert alert-danger text-center'> Invalid First name</h6>";
                 }
                 
-                if ( !preg_match($RegexAlphab, $lname) || strlen($lname) == 0  || strlen($lname) > 20 ){
+                if ( !preg_match($RegexAlphab, $lname) || trim($lname)==""  || strlen($lname) > 20 ){
                     $valid = False;
                     echo "<h6 class='alert alert-danger text-center'> Invalid Last name</h6>";
                 }
@@ -35,12 +35,12 @@
                 }
 
                 
-                if (strlen($email) == 0 || !preg_match($RegexEmail, $email) || strlen($email) > 100){
+                if (trim($email)=="" || !preg_match($RegexEmail, $email) || strlen($email) > 100){
                     $valid = False;
                     echo "<h6 class='alert alert-danger text-center'> Invalid Email</h6>";
                 }
                     
-                if ($password1 != $password2 || strlen($password2) == 0){
+                if ($password1 != $password2 || trim($password1)==""){
                     $valid = False;
                     echo "<h6 class='alert alert-danger text-center'> Password didn't match </h6>";
                 }
