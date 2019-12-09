@@ -126,5 +126,5 @@
     </form>
 </div>
 
-<!-- <script src="js/validation.js"></script> -->
+<script src="js/validation.js"></script>
 <?php include "./includes/footer.php" ?>
