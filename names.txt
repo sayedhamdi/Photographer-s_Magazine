@@ -1,16 +1,14 @@
-1->4 - 29 -30-33-34 hathem boulabiar 
+1-2-3-4-29-30-33-34 haithem boulabiar 
 
-5->6-8-31Salah hassani
+5-6-8-31 Salah hassani
 
-7 38-> hanen souhayel
+7-38-> hanen souhayel
 
-9-10-11-12-15-20-21-47 > Houcin Ncib
+9-10-11-12-15-20-21-47-16-17-18-19-22-23-41-42-43 > Houcin Ncib
 
-13-14--|24->28-32-44-45-46 > Siraj Sahbi 
-
-16-17-18-19-22-23-41-42-43>Hanen
+13-14|24->28|32-44-45-46 > Siraj Sahbi 
 
 35-36-37 > nour ben omrane
 
-39-40 - > Narjes Guesmy
+39-40 > Narjes Guesmy
 

@@ -15,7 +15,7 @@
         <?php
             $res = mysqli_query($conn,'select dir,name from image');
             $i=1;
-            while($row = mysqli_fetch_array($res)){ 
+            while($row = mysqli_fetch_array($res)){
         ?>
             <div class="col-md-4">
                 <a href='<?php echo $row['dir']?> ' target="_blank">
