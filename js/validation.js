@@ -23,11 +23,11 @@ function validate(){
         'password2':''
 }
     if (!RegexAlphab.test(fname.value) || fname.value.length == 0 || fname.value.length > 20 ){
-        errors['firstname'] = 'Please enter a valid First name';
+        errors['firstname'] = 'Please enter a valid First name'
     }
     
     if (!RegexAlphab.test(lname.value) || lname.value.length == 0  || lname.value.length > 20  ){
-        errors['lastname'] = 'Please enter a valid Last name';
+        errors['lastname'] = 'Please enter a valid Last name'
 
     }
 
@@ -53,17 +53,21 @@ function validate(){
 
     }
    
-    
     for (var key in errors) {
+        var errorNode = document.createElement("span"); 
+        var errorInput = document.getElementById(key); 
+        var nextElement = errorInput.nextSibling
+        if (nextElement.tagName == "SPAN"){
+            nextElement.remove()
+            errorInput.style.borderColor = "black"
+        }
         if (errors[key] != ''){
             valid=false
-            var errorNode = document.createElement("span"); 
-            var errorContent = document.createTextNode(errors[key]); 
+            var errorContent = document.createTextNode(errors[key])
             errorNode.appendChild(errorContent);  
             errorNode.classList.add('input-error')
-            var errorInput = document.getElementById(key); 
             errorInput.style.borderColor = "crimson"
-            errorInput.parentNode.insertBefore(errorNode, errorInput.nextSibling);
+            errorInput.parentNode.insertBefore(errorNode, errorInput.nextSibling)
             
         }
     }  
