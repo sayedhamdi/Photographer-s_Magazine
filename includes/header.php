@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
+<!-- <?php
+// session_start();
+ 
+// if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+//   // change  to profile icon or login btn
+// }
+?> -->
+
 <head>
   <meta charset="utf-8">
   <title>Pulchart Magazine</title>
