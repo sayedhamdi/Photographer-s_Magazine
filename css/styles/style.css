@@ -183,7 +183,7 @@ input {
 }
 
 
-/* register style start */
+/* register/login style start */
 
 .form-control:focus,
 .form-control:hover {
@@ -217,6 +217,27 @@ input {
     font-size: 12px;
     color: #ad1106;
 }
+
+.login-header>h1{
+	text-align: center;
+	font-family: Nexa-Bold;
+}
+
+.login-header>a{
+	color:gray;
+	text-align: center;
+	font-family: Nexa-Light;
+}
+.login-header>a:hover{
+	color:#4f2ae2;
+	text-align: center;
+	font-family: Nexa-Light;
+}
+.login-btn{
+	width: calc(15vw - 20px) !important;
+}
+
+/* end */
 @media (max-width:991px) {
 	.col-md-4>a>img {
 		width: 100% !important;

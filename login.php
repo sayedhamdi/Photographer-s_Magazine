@@ -1,33 +1,22 @@
 <?php include "./includes/header.php" ?>
 
-    <div class="container" style="padding : 50px 250px 0px">
-        
+<div class="container" style="margin: 6% auto;">
+    <div class="login-header">
+        <h1>Login</h1>
+        <a href=register.php ><h6> You don't have an account Signup ? now</h6></a>
+        <hr width=70%>
     </div>
-    <form action="login.php" method="POST" style="padding: 0px 250px 50px; text-align:center">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="email"> E-mail : </label>
-                    <input type="email" name="email" class="form-control" id="email">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="password"> Password : </label>
-                    <input type="password" name="password" class="form-control" id="password">
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4">
-                <div class="form-group">
-                    <br>
-                    <input type="submit" name="login" class="form-control sign" Value="Login">
-                </div>
-            </div>
-            <div class="col-md-4"></div>
+    <form action="login.php" method="POST">
+        <input placeholder="Email" type="email" name="email" class="form-control" id="email"
+            style="width: 180px;margin: 30px auto;">
+        <input placeholder="Password" type="password" name="password" class="form-control" id="password"
+            style="width: 180px;margin: 30px auto;">
+
+        <div class="form-group">
+            <input type="submit" name="login" class="form-control login-btn sign" Value="Login">
+            <a href=# style="color:gray;text-align:center;font-family:Nexa-Light"><h6 style="margin-top:10px">Password reset</h6></a>
         </div>
     </form>
+</div>
 
 <?php include "./includes/footer.php" ?>
