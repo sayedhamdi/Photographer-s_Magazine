@@ -1,9 +1,10 @@
 <?php include "./includes/header.php" ?>
+<?php include "./includes/login.php" ?>
 
 <div class="container" style="margin: 6% auto;">
     <div class="login-header">
         <h1>Login</h1>
-        <a href=register.php ><h6> You don't have an account Signup ? now</h6></a>
+        <a href=register.php ><h6> You don't have an account ? Signup now</h6></a>
         <hr width=70%>
     </div>
     <form action="login.php" method="POST">
