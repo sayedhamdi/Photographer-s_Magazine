@@ -41,17 +41,17 @@
                 <a class="nav-link" href="#"> <img src="img/icons/profile.png" alt="" width="25rem"> </a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link Nexa-Bold" href="logout.php">logout <span class="sr-only">(current)</span></a>
+                <a class="nav-link Nexa-Bold" href="logout.php">logout</a>
               </li>');
             else
             echo (
               '<li class="nav-item">
-                <a class="nav-link" href="#"> login </a>
+                <a class="nav-link" href="login.php"> login </a>
               </li>
 
               <li class="nav-item" style="color:white;font-family:Nexa-Light;">/</li>
               <li class="nav-item active">
-                <a class="nav-link Nexa-Bold" href="logout.php">signup</a>
+                <a class="nav-link Nexa-Bold" href="register.php">signup</a>
               </li>'); 
       ?>
         </ul>
