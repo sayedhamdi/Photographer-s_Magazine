@@ -35,8 +35,7 @@
           if (session_status() == PHP_SESSION_NONE) session_start(); 
 
  
-          if(isset($_SESSION["loggedin"])) 
-            if ($_SESSION["loggedin"] == true)
+          if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true ) 
             echo (
               '<li class="nav-item">
                 <a class="nav-link" href="#"> <img src="img/icons/profile.png" alt="" width="25rem"> </a>
@@ -49,6 +48,8 @@
               '<li class="nav-item">
                 <a class="nav-link" href="#"> login </a>
               </li>
+
+              <li class="nav-item" style="color:white;font-family:Nexa-Light;">/</li>
               <li class="nav-item active">
                 <a class="nav-link Nexa-Bold" href="logout.php">signup</a>
               </li>'); 
