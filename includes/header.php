@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
   <meta charset="utf-8">
   <title>Pulchart Magazine</title>
@@ -32,12 +31,28 @@
           <li class="nav-item">
             <a class="nav-link" href="#"> <img src="img/icons/youtube.png" alt="" width="25rem"> </a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="#"> <img src="img/icons/profile.png" alt="" width="25rem"> </a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link Nexa-Bold" href="#">Profile <span class="sr-only">(current)</span></a>
-          </li> -->
+          <?php 
+          if (session_status() == PHP_SESSION_NONE) session_start(); 
+
+ 
+          if(isset($_SESSION["loggedin"])) 
+            if ($_SESSION["loggedin"] == true)
+            echo (
+              '<li class="nav-item">
+                <a class="nav-link" href="#"> <img src="img/icons/profile.png" alt="" width="25rem"> </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link Nexa-Bold" href="logout.php">logout <span class="sr-only">(current)</span></a>
+              </li>');
+            else
+            echo (
+              '<li class="nav-item">
+                <a class="nav-link" href="#"> login </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link Nexa-Bold" href="logout.php">signup</a>
+              </li>'); 
+      ?>
         </ul>
       </div>
       <div class="flex-row">
