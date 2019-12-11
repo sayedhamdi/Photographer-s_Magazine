@@ -1,59 +1,61 @@
 <!-- Header -->
-    <?php include "./includes/header.php" ?>
-
+    <?php include "includes/header.php" ?>
     <!doctype html>
     <html>
       <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/styles/submission.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
       </head>
       <body>
         <div class="contenuu">
         <div class="sub_para">
-        <pre>
+        <p>
 
-                                      PLEASE NOTE
+         <span class="titree">  PLEASE NOTE </span><br><br>
 
-         We occasionally accept submissions from Photographers, Videographers, Stylists,
-         Makeup Artists, Agencies, Models, Hairstylists & Creative
-         Director. You must be the copyright holder to the images being submitted,
-         or have permission from the copyright holder to submit the images. Portfolio
-         is only for the photographers thats why we dont make portfolio to anyone that
-         is not photographer. We do not pay for submission or pubblication of fill or
-         partial content of any kind. Any content you submit for EDITORIAL  must not be
-         previously published in any other magazine or platform including social
-         network. We reserved the right to pull your story form our website and social
+         We occasionally accept submissions from Photographers, Videographers, Stylists, <br>
+         Makeup Artists, Agencies, Models, Hairstylists & Creative<br>
+         Director. You must be the copyright holder to the images being submitted, <br>
+         or have permission from the copyright holder to submit the images. Portfolio <br>
+         is only for the photographers thats why we dont make portfolio to anyone that <br>
+         is not photographer. We do not pay for submission or pubblication of fill or <br>
+         partial content of any kind. Any content you submit for EDITORIAL  must not be <br>
+         previously published in any other magazine or platform including social <br>
+         network. We reserved the right to pull your story form our website and social<br>
           without your consent.
-        </pre>
+        </p>
         </div>
         <div class="ligne"></div>
 
 
 
         <div class="sub_para">
-        <pre>
+        <p>
 
-                                                 - PORTFOLIO -
+             <span class="titree"> PORTFOLIO </span><br><br>
 
-         We would like to remind you that you can submit  photos every Wednesday from 12PM to 6PM GMT+1
-         Requirements:
-         1 - 2 images MAX
-        JPG or TIF format only
-        At least 6500 pixels 300dpi  *OPTIONAL
-        Credits should contain everyone’s INSTAGRAM tags.
-        Images must be  NON-EXCLUSIVE or EXCLUSIVE
-        ⚠️English names text only.
-        ⚠️Credits should contain everyone’s INSTAGRAM tags.
-        ⚠️ Submitting more than 2 photos will automatically declined without explanation.
-        </pre>
+         We would like to remind you that you can submit  photos every <br>
+         Wednesday from 12PM to 6PM GMT+1 Requirements:<br>
+         1 - 2 images MAX<br>
+        JPG or TIF format only<br>
+        At least 6500 pixels 300dpi  *OPTIONAL<br>
+        Credits should contain everyone’s INSTAGRAM tags.<br>
+        Images must be  NON-EXCLUSIVE or EXCLUSIVE<br>
+        <i class="fas fa-exclamation-circle"></i> English names text only.<br>
+        <i class="fas fa-exclamation-circle"></i> Credits should contain everyone’s INSTAGRAM tags.<br>
+        <i class="fas fa-exclamation-circle"></i> Submitting more than 2 photos will automatically declined without explanation.<br>
+        </p>
         </div>
 
         <div class="portfolio">
-        <a href="#">
+        <a href="submission_off.php">
         <div class="container">
+          <div class="overlayy">
           <h2>Web | portfolio submission</h2>
           <span class="description">Call for work</span>
           <span class="deadline">Deadline:27 December</span>
+          </div>
         </div>
         </a>
         <div class="btn"><button>close</button></div>
@@ -61,26 +63,28 @@
         <div class="ligne"></div>
 
         <div class="sub_para">
-        <pre>
-                                                   - EXCLUSIVE -
+        <p>
+             <span class="titree">EXCLUSIVE</span><br><br>
 
-        We would like to remind you that you can submit EXCLUSIVE photos every SATURDAY  from 12PM to 6PM GMT+1
-        Requirements:
-        1 - 2 images  MAX
-        JPG or TIF format only
-        At least 6500 pixels 300dpi  *OPTIONAL
-        ⚠️English names text only.
-        ⚠️Credits should contain everyone’s INSTAGRAM tags.
-        ⚠️Images must be  EXCLUSIVE and UNPUBLISHED
-        ⚠️ Submitting more than 2 photos will automatically declined without explanation
-        </pre>
+        We would like to remind you that you can submit EXCLUSIVE photos <br>
+        every SATURDAY  from 12PM to 6PM GMT+1 ,Requirements:<br>
+        1 - 2 images  MAX<br>
+        JPG or TIF format only<br>
+        At least 6500 pixels 300dpi  *OPTIONAL<br>
+        <i class="fas fa-exclamation-circle"></i> English names text only.<br>
+        <i class="fas fa-exclamation-circle"></i> Credits should contain everyone’s INSTAGRAM tags.<br>
+        <i class="fas fa-exclamation-circle"></i> Images must be  EXCLUSIVE and UNPUBLISHED<br>
+        <i class="fas fa-exclamation-circle"></i> Submitting more than 2 photos will automatically declined without explanation<br>
+        </p>
         </div>
         <div class="portfolio">
-        <a href="#">
+        <a href="submission_off.php">
         <div class="container">
+         <div class="overlayy">
           <h2>Web | portfolio submission</h2>
           <span class="description">Call for work</span>
           <span class="deadline">Deadline:27 December</span>
+         </div>
         </div>
         </a>
         <div class="btn"><button>close</button></div>
@@ -89,28 +93,29 @@
         <div class="ligne"></div>
 
         <div class="sub_para">
-        <pre>
+        <p>
 
-         - BEAUTY -
-
-        Requirements:
-        Title
-        10 - 15 images
-        4 - 10 looks
-        JPG or TIF format
-        At least 6500 pixels 300dpi  *OPTIONAL
-       ⚠️English names text only.
-       ⚠️Credits should contain everyone’s INSTAGRAM tags.
-       ⚠️Images must be EXCLUSIVE and UNPUBLISHED
-      </pre>
+         <span class="titree"> BEAUTY </span><br><br>
+        Requirements:<br>
+        Title<br>
+        10 - 15 images <br>
+        4 - 10 looks<br>
+        JPG or TIF format<br>
+        At least 6500 pixels 300dpi  *OPTIONAL<br>
+        <i class="fas fa-exclamation-circle"></i> English names text only.<br>
+        <i class="fas fa-exclamation-circle"></i> Credits should contain everyone’s INSTAGRAM tags.<br>
+        <i class="fas fa-exclamation-circle"></i> Images must be EXCLUSIVE and UNPUBLISHED<br>
+      </p>
       </div>
 
       <div class="portfolio">
-        <a href="#">
+        <a href="submission_off.php">
         <div class="container">
+          <div class="overlayy">
           <h2>Web | portfolio submission</h2>
           <span class="description">Call for work</span>
           <span class="deadline">Deadline:27 December</span>
+          </div>
         </div>
         </a>
         <div class="btn"><button>close</button></div>
@@ -118,31 +123,37 @@
         <div class="ligne"></div>
 
         <div class="sub_para">
-        <pre>
-          - FASHION -
-        Requirements:
-        Title
-        10 - 15 images
-        4 - 10 looks
-       JPG or TIF format
-       At least 6500 pixels 300dpi  *OPTIONAL
-      ⚠️English names text only.
-      ⚠️Credits should contain everyone’s INSTAGRAM tags.
-      ⚠️Images must be  EXCLUSIVE and UNPUBLISHED
+        <p>
+          <span class="titree"> FASHION</span><br><br>
+        Requirements:<br>
+        Title<br>
+        10 - 15 images <br>
+        4 - 10 looks<br>
+       JPG or TIF format<br>
+       At least 6500 pixels 300dpi  *OPTIONAL<br>
+       <i class="fas fa-exclamation-circle"></i> English names text only.<br>
+      <i class="fas fa-exclamation-circle"></i> Credits should contain everyone’s INSTAGRAM tags.<br>
+      <i class="fas fa-exclamation-circle"></i> Images must be  EXCLUSIVE and UNPUBLISHED<br>
 
-       </pre>
+       </p>
        </div>
        <div class="portfolio">
-        <a href="#">
+        <a href="submission_off.php">
         <div class="container">
+          <div class="overlayy">
           <h2>Web | portfolio submission</h2>
           <span class="description">Call for work</span>
           <span class="deadline">Deadline:27 December</span>
+          </div>
         </div>
         </a>
         <div class="btn"><button>close</button></div>
         </div>
         <div class="ligne"></div>
+
+
+
+
 
         </div>
       </body>
