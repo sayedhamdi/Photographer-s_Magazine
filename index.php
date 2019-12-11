@@ -10,15 +10,13 @@
         <br>
         PULCHART magazine is a pure artistic portrait photography magazine specialised in Editorial fashion, beauty,
         conceptual, fine art and fantasy.
-      <span class="Nexa-Bold" style="display:block; padding:10px; font-size:calc(.2rem + 1.2vw">
+      <span class="Nexa-Bold" style="display:block; padding:10px; font-size:calc(.2rem + 1.2vw);">
         <a href="about.php" style="color:#121415b0">Read More ...</a>
       </span>
       </p>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 ">
-    <a href="img/bg-images/about_us.jpg" target="_blank">
       <img src="img/bg-images/about_us.jpg" alt="" class="img-fluid" width="300px">
-    </a>
     </div>
   </div>
 </div>

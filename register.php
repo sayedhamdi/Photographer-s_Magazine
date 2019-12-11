@@ -2,6 +2,7 @@
 <?php include "./includes/register.php" ?>
 <div class="container" style="padding: 30px 190px;">
     <form action="register.php" method="POST">
+        <h1 class="Nexa-Bold" style='text-align :center;margin-bottom:30px'>Join the community now </h1>
         <div class="row">
             <div class="col-md-6" style="border-right: 1px solid #00000030;padding: 30px;">
                 <div class="form-group">

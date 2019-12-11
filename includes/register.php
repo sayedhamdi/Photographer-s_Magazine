@@ -1,4 +1,9 @@
 <?php 
+if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+    header("location: index.php");
+    exit;
+}
+
             $RegexAlphab = '/^[a-zA-Z]*$/';
             $RegexDate = '/^((19|20)\d{2}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01]))$/';
             $RegexEmail = '/^[^\s@]+@[^\s@]+\.[^\s@]+$/';
@@ -30,7 +35,6 @@
                 
                 if (!preg_match($RegexDate, $date)){
                     $valid = False;
-                    echo $date;
                     echo "<h6 class='alert alert-danger text-center'> Invalid Birth Date</h6>";
                 }
 
