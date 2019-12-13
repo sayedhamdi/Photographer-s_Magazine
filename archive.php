@@ -1,4 +1,3 @@
-<!-- Header -->
 <?php include "./includes/header.php";
     require_once "./includes/db_cnx.php";
 ?>
@@ -14,7 +13,7 @@
         </div>
         <div class="row text-center">
         <?php
-            $res = mysqli_query($conn,'select name,photographe.firstname,photographe.lastname from photographe,image 
+            $res = mysqli_query($conn,'select name,photographe.firstname,photographe.lastname from photographe,image
             where photographe.id = image.owner');
             $i=1;
             while($row = mysqli_fetch_array($res)){

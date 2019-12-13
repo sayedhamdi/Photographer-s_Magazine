@@ -1,5 +1,4 @@
-<!-- Header -->
-    <?php include "includes/header.php" ?>
+<?php include "includes/header.php" ?>
     <!doctype html>
     <html>
       <head>

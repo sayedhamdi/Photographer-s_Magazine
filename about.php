@@ -1,4 +1,3 @@
-<!-- Header -->
 <?php include "./includes/header.php" ?>
 <br><br><br>
 <!-- about us section -->

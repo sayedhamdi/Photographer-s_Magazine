@@ -1,4 +1,3 @@
-<!-- Header -->
 <?php include "./includes/header.php" ?>
 <body>
 <div class="container img-container ">
