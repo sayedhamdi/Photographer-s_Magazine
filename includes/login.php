@@ -41,7 +41,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             if(password_verify($password, $row['password'])){
               session_start();
               $_SESSION["loggedin"] = true;
-              $_SESSION["id"] = rows["id"];
+              $_SESSION["id"] = $rows["id"];
               $_SESSION["email"] = $email;
               header("location: index.php");
           }
