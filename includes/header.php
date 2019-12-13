@@ -32,8 +32,7 @@
             <a class="nav-link" href="#"> <img src="img/icons/youtube.png" alt="" width="25rem"> </a>
           </li>
           <?php
-          @ob_start();
-          if (session_status() == PHP_SESSION_NONE) session_start();
+          if (session_status() == PHP_SESSION_NONE) {@ob_start();session_start();}
 
 
           if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true )
