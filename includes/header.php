@@ -1,3 +1,4 @@
+<?php if (session_status() == PHP_SESSION_NONE) {@ob_start();session_start();} ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -32,9 +33,6 @@
             <a class="nav-link" href="#"> <img src="img/icons/youtube.png" alt="" width="25rem"> </a>
           </li>
           <?php
-          if (session_status() == PHP_SESSION_NONE) {@ob_start();session_start();}
-
-
           if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true )
             echo (
               '<li class="nav-item">
