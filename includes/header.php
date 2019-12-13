@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="css/styles/bootstrap.min.css" integrity="" crossorigin="anonymous">
   <link  rel="stylesheet" href="css/styles/style.css" integrity="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <meta name="viewport"
     content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 </head>
@@ -31,11 +31,12 @@
           <li class="nav-item">
             <a class="nav-link" href="#"> <img src="img/icons/youtube.png" alt="" width="25rem"> </a>
           </li>
-          <?php 
-          if (session_status() == PHP_SESSION_NONE) session_start(); 
+          <?php
+          @ob_start();
+          if (session_status() == PHP_SESSION_NONE) session_start();
 
- 
-          if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true ) 
+
+          if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true )
             echo (
               '<li class="nav-item">
                 <a class="nav-link" href="#"> <img src="img/icons/profile.png" alt="" width="25rem"> </a>
@@ -52,7 +53,7 @@
               <li class="nav-item" style="color:white;font-family:Nexa-Light;">/</li>
               <li class="nav-item active">
                 <a class="nav-link Nexa-Bold" href="register.php">signup</a>
-              </li>'); 
+              </li>');
       ?>
         </ul>
       </div>

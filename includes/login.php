@@ -39,6 +39,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         }
         while($row = $result->fetch_assoc()) {
             if(password_verify($password, $row['password'])){
+              @ob_start();
               session_start();
               $_SESSION["loggedin"] = true;
               $_SESSION["id"] = rows["id"];
