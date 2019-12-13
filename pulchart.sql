@@ -21,8 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `pulchart`
 --
-CREATE DATABASE IF NOT EXISTS `pulchart` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `pulchart`;
+CREATE DATABASE IF NOT EXISTS `pulchart_pulchart` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `pulchart_pulchart`;
 
 -- --------------------------------------------------------
 
