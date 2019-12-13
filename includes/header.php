@@ -1,6 +1,10 @@
 <?php
+<<<<<<< HEAD
  if (session_status() == PHP_SESSION_NONE) {@ob_start();session_start();}
 ?>
+=======
+if (session_status() == PHP_SESSION_NONE) {@ob_start();session_start();} ?>
+>>>>>>> c4257c3e001d0204c7fc8e99ff87eff79816eb24
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
