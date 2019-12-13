@@ -26,7 +26,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $password_err = "Please enter your password.";
         $valid = false;
     }
-
     // Validate credentials
     if($valid){
         $stmt =  $conn->prepare("SELECT id, email, password FROM photographe WHERE email = ?") ;
