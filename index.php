@@ -1,5 +1,6 @@
-<!-- Header  -->
-<?php include "./includes/header.php" ?>
+<?php
+ include "./includes/header.php";
+?>
 
 <!-- about us section -->
 <div class="container" style="margin-bottom:30px">
