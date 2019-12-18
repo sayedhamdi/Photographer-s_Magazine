@@ -7,15 +7,14 @@
 <form action="checkbox.php" method="POST">
     <div id="checkdivs">
         <?php
-    $getAll = mysqli_query($conn,"select name,category,photographe.firstname,photographe.lastname,owner,image.id from image,photographe where
-        photographe.id = owner and verified = 0 limit 5");
+            $getAll = mysqli_query($conn,"select name,category,photographe.firstname,photographe.lastname,owner,image.id from image,photographe where
+                photographe.id = owner and verified = 0 limit 5");
 
     if (mysqli_num_rows($getAll) > 0){
         while($row = mysqli_fetch_array($getAll)){    
                 echo '
                     <div class=checkdiv id="'.$row['id'].'">
-                    <input type="checkbox" name="'.$row['id'].'" value="'.$row['id'].'" id="'.$row['id'].'"  />
-                    <label class="img-div" style="background-image:url('.$row['name'].')" for="'.$row['id'].'"></label>
+                    <div class="img-div" style="background-image:url('.$row['name'].')"></div>
                     <div class=img-detail>
                     <a class=expand href='.$row['name'].' target=_blank>
                     <img src="img/icons/expand.svg">
@@ -48,13 +47,13 @@
                 action = (this.id).split('-')[0]
 
                 $('div#' + target).animate({
-                            width: "0px",
-                            height: "0px",
-                            marginLeft: "-15px",
-                            opacity:"0"
-                        }, 500, function () {
+                    width: "0px",
+                    height: "0px",
+                    marginLeft: "-15px",
+                    opacity: "0"
+                }, 500, function () {
 
-                            $(this).remove();
+                    $(this).remove();
                 });
 
                 $.ajax({

@@ -10,11 +10,7 @@
     z-index: 99;
 }
 
-#checkdivs input[type=checkbox]:checked+.img-div {
-    background-color: #000000a8;
-    background-blend-mode: overlay;
-    background-repeat: no-repeat;
-}
+
 
 .checkdiv {
     position: relative;
