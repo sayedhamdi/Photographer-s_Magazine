@@ -1,142 +1,9 @@
 <?php 
     include '/includes/db_cnx.php'; 
+    $extra_css = '<link href="css/styles/admin.css" rel="stylesheet">';
+    include '/includes/header.php'; 
 ?>
 
-<head>
-    <link rel="stylesheet" href="/css/styles/style.css" integrity="">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
-</head>
-<style>
-    .img-div {
-        display: inline-block;
-        width: 250px;
-        height: 250px;
-        background-size: cover;
-    }
-
-    #checkdivs input[type=checkbox] {
-        display: none;
-        z-index: 99;
-    }
-
-    #checkdivs input[type=checkbox]:checked+.img-div {
-        background-color: #000000a8;
-        background-blend-mode: overlay;
-        background-repeat: no-repeat;
-    }
-
-    .checkdiv {
-        position: relative;
-        height: 250px;
-        width: 250px;
-        display: inline;
-    }
-
-    
-    .checkdiv:hover .img-div {
-        background-color: #000000a8;
-        background-blend-mode: overlay;
-    }
-
-    .checkdiv:hover .img-detail {
-        transition: ease-in-out .5s;
-        opacity: 1;
-        margin-top:-50%;
-    }
-
-
-    .img-detail {
-        position: absolute;
-        left: 0%;
-        width: 100%;
-        opacity: 0;
-        margin-top: -20%;
-        background-color:white;
-        padding:10px 0;
-    }
-
-    .expand{
-        position: absolute;
-        top: -100px;
-        left: 90px;
-        opacity: .2;
-
-    }
-
-    .expand:hover{
-        transition:ease-in-out .5s;
-        opacity: .9
-    }
-
-    .expand>img{
-        width:60%;
-    }
-
-    .category{
-        margin: 0px 15px;
-        float:right;
-        font-family:Nexa-Light;
-        font-size:12px
-    }
-
-    .img-detail>.photographe {
-        font-family: Nexa-Bold;
-        font-size: 20px;
-        color:#010101;
-        display:block;
-        margin: 20px 20px 0 20px;
-    }
-
-
-    .date{
-        font-size: 12px;
-        font-family: Nexa-Light;
-        color: #000000a6;
-        margin: 0px 40px;
-    }
-
-    .action-btns {
-        top:10px;
-        display: block;
-        position: relative;
-        margin: 20px 40px;
-    }
-
-    .btn {
-        font-size: 12px;
-        cursor: pointer;
-        background-color: white;
-        border: 0;
-        padding: 5px 15px;
-        margin: 0 5px;
-        color: black;
-        font-family: Nexa-Light;
-    }
-
-    .btn-add {
-        border: 0.5px solid black;
-    }
-
-    .btn-add:hover{
-        color:green;
-        border-color:green;
-    }
-
-    .btn-decline {
-        font-weight: 700;
-        border-bottom: 1px solid black;
-        border-top: .7px solid #000000d9;
-    }
-
-    .btn-decline:hover{
-        color:red;
-        border-color:red;
-    }
-
-
-
-</style>
 <form action="checkbox.php" method="POST">
     <div id="checkdivs">
         <?php
@@ -148,10 +15,10 @@
                 echo '
                     <div class=checkdiv id="'.$row['id'].'">
                     <input type="checkbox" name="'.$row['id'].'" value="'.$row['id'].'" id="'.$row['id'].'"  />
-                    <label class="img-div" style="background-image:url(../../'.$row['name'].')" for="'.$row['id'].'"></label>
+                    <label class="img-div" style="background-image:url('.$row['name'].')" for="'.$row['id'].'"></label>
                     <div class=img-detail>
-                    <a class=expand href=../../'.$row['name'].' target=_blank>
-                    <img src="../../img/icons/expand.svg">
+                    <a class=expand href='.$row['name'].' target=_blank>
+                    <img src="img/icons/expand.svg">
                     </a>
                         <span class=category>#fashion</span>
                         <span class=photographe>'.$row['firstname'].' '.$row['lastname'].'</span>
@@ -202,7 +69,7 @@
         });
     });
 </script>
-
+</body>
 <?php
     echo("<br>");
     if($_SERVER["REQUEST_METHOD"] == "POST"){
