@@ -1,3 +1,14 @@
+.checkdivs{
+    padding: 10px;
+}
+.checkdiv {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    display: inline;
+    margin:5px;
+
+}
 .img-div {
     display: inline-block;
     width: 250px;
@@ -5,20 +16,10 @@
     background-size: cover;
 }
 
-#checkdivs input[type=checkbox] {
+.checkdiv input[type=checkbox] {
     display: none;
     z-index: 99;
 }
-
-
-
-.checkdiv {
-    position: relative;
-    height: 250px;
-    width: 250px;
-    display: inline;
-}
-
 
 .checkdiv:hover .img-div {
     background-color: #000000a8;
@@ -40,6 +41,7 @@
     margin-top: -20%;
     background-color: white;
     padding: 10px 0;
+    z-index: 1;
 }
 
 .expand {
@@ -94,6 +96,7 @@
     cursor: pointer;
     background-color: white;
     border: 0;
+    border-radius: 0;
     padding: 5px 15px;
     margin: 0 5px;
     color: black;
