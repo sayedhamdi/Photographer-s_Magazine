@@ -1,7 +1,7 @@
 <?php 
-    include '/includes/db_cnx.php'; 
+    include './includes/db_cnx.php'; 
     $extra_css = '<link href="css/styles/admin.css" rel="stylesheet">';
-    include '/includes/header.php'; 
+    include './includes/header.php'; 
 ?>
 
 <form action="checkbox.php" method="POST">
