@@ -26,14 +26,18 @@
     background-blend-mode: overlay;
 }
 
+
 .checkdiv:hover .img-detail {
     transition: ease-in-out .5s;
+    visibility: visible;
     opacity: 1;
     margin-top: -50%;
+    
 }
 
 
 .img-detail {
+    visibility: hidden;
     position: absolute;
     left: 0%;
     width: 100%;
