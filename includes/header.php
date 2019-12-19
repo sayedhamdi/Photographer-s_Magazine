@@ -8,8 +8,10 @@
   <title>Pulchart Magazine</title>
   <link rel="stylesheet" href="css/styles/bootstrap.min.css" integrity="" crossorigin="anonymous">
   <link  rel="stylesheet" href="css/styles/style.css" integrity="">
+  <?php 
+    if(isset($extra_css)) echo $extra_css;
+  ?>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <meta name="viewport"
     content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 </head>
@@ -38,7 +40,7 @@
           if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true )
             echo (
               '<li class="nav-item">
-                <a class="nav-link" href="#"> <img src="img/icons/profile.png" alt="" width="25rem"> </a>
+                <a class="nav-link" href="./profile.php"> <img src="img/icons/profile.png" alt="" width="25rem"> </a>
               </li>
               <li class="nav-item active">
                 <a class="nav-link Nexa-Bold" href="logout.php">logout</a>

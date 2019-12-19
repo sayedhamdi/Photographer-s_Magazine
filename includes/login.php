@@ -40,7 +40,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
               @ob_start();
               session_start();
               $_SESSION["loggedin"] = true;
-              $_SESSION["id"] = rows["id"];
+              $_SESSION["id"] = row['id'];
               $_SESSION["email"] = $email;
               header("location: index.php");
           }

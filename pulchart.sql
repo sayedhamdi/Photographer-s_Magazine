@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  mer. 11 déc. 2019 à 16:42
+-- Généré le :  mer. 18 déc. 2019 à 18:38
 -- Version du serveur :  5.7.17
 -- Version de PHP :  5.6.30
 
@@ -21,8 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `pulchart`
 --
-CREATE DATABASE IF NOT EXISTS `pulchart_pulchart` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `pulchart_pulchart`;
+CREATE DATABASE IF NOT EXISTS `pulchart` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `pulchart`;
 
 -- --------------------------------------------------------
 
@@ -34,6 +34,7 @@ CREATE TABLE `image` (
   `id` int(11) NOT NULL,
   `name` varchar(100) NOT NULL,
   `category` varchar(50) NOT NULL,
+  `verified` tinyint(1) NOT NULL DEFAULT '0',
   `owner` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -41,54 +42,54 @@ CREATE TABLE `image` (
 -- Déchargement des données de la table `image`
 --
 
-INSERT INTO `image` (`id`, `name`, `category`, `owner`) VALUES
-(1, 'img/Pages/Archive/1.jpeg', '', 1),
-(2, 'img/Pages/Archive/2.jpeg', '', 1),
-(3, 'img/Pages/Archive/3.jpeg', '', 1),
-(4, 'img/Pages/Archive/4.jpeg', '', 1),
-(5, 'img/Pages/Archive/29.jpeg', '', 1),
-(6, 'img/Pages/Archive/30.jpeg', '', 1),
-(7, 'img/Pages/Archive/33.jpeg', '', 1),
-(8, 'img/Pages/Archive/34.jpeg', '', 1),
-(9, 'img/Pages/Archive/5.JPG', '', 2),
-(10, 'img/Pages/Archive/6.JPG', '', 2),
-(11, 'img/Pages/Archive/8.JPG', '', 2),
-(12, 'img/Pages/Archive/31.JPG', '', 2),
-(13, 'img/Pages/Archive/7.jpg', '', 3),
-(14, 'img/Pages/Archive/38.jpg', '', 3),
-(15, 'img/Pages/Archive/9.JPG', '', 4),
-(16, 'img/Pages/Archive/10.jpg', '', 4),
-(17, 'img/Pages/Archive/11.jpg', '', 4),
-(18, 'img/Pages/Archive/12.jpg', '', 4),
-(19, 'img/Pages/Archive/15.jpg', '', 4),
-(20, 'img/Pages/Archive/20.jpg', '', 4),
-(21, 'img/Pages/Archive/21.jpg', '', 4),
-(22, 'img/Pages/Archive/47.jpg', '', 4),
-(23, 'img/Pages/Archive/13.jpg', '', 5),
-(24, 'img/Pages/Archive/14.jpg', '', 5),
-(25, 'img/Pages/Archive/24.jpg', '', 5),
-(26, 'img/Pages/Archive/25.jpg', '', 5),
-(27, 'img/Pages/Archive/26.jpg', '', 5),
-(28, 'img/Pages/Archive/27.jpg', '', 5),
-(29, 'img/Pages/Archive/28.jpg', '', 5),
-(30, 'img/Pages/Archive/32.jpg', '', 5),
-(31, 'img/Pages/Archive/44.jpg', '', 5),
-(32, 'img/Pages/Archive/45.jpg', '', 5),
-(33, 'img/Pages/Archive/46.jpg', '', 5),
-(34, 'img/Pages/Archive/16.jpg', '', 6),
-(35, 'img/Pages/Archive/17.jpg', '', 6),
-(36, 'img/Pages/Archive/18.jpg', '', 6),
-(37, 'img/Pages/Archive/19.jpg', '', 6),
-(38, 'img/Pages/Archive/22.jpg', '', 6),
-(39, 'img/Pages/Archive/23.jpg', '', 6),
-(40, 'img/Pages/Archive/41.jpg', '', 6),
-(41, 'img/Pages/Archive/42.jpg', '', 6),
-(42, 'img/Pages/Archive/43.jpg', '', 6),
-(43, 'img/Pages/Archive/35.jpg', '', 7),
-(44, 'img/Pages/Archive/36.jpg', '', 7),
-(45, 'img/Pages/Archive/37.jpg', '', 7),
-(46, 'img/Pages/Archive/39.jpeg', '', 8),
-(47, 'img/Pages/Archive/40.jpeg', '', 8);
+INSERT INTO `image` (`id`, `name`, `category`, `verified`, `owner`) VALUES
+(1, 'img/Pages/Archive/1.jpeg', '', 0, 1),
+(2, 'img/Pages/Archive/2.jpeg', '', 0, 1),
+(3, 'img/Pages/Archive/3.jpeg', '', 0, 1),
+(4, 'img/Pages/Archive/4.jpeg', '', 0, 1),
+(5, 'img/Pages/Archive/29.jpeg', '', 0, 1),
+(6, 'img/Pages/Archive/30.jpeg', '', 0, 1),
+(7, 'img/Pages/Archive/33.jpeg', '', 0, 1),
+(8, 'img/Pages/Archive/34.jpeg', '', 0, 1),
+(9, 'img/Pages/Archive/5.JPG', '', 0, 2),
+(10, 'img/Pages/Archive/6.JPG', '', 0, 2),
+(11, 'img/Pages/Archive/8.JPG', '', 0, 2),
+(12, 'img/Pages/Archive/31.JPG', '', 0, 2),
+(13, 'img/Pages/Archive/7.jpg', '', 0, 3),
+(14, 'img/Pages/Archive/38.jpg', '', 0, 3),
+(15, 'img/Pages/Archive/9.JPG', '', 0, 4),
+(16, 'img/Pages/Archive/10.jpg', '', 0, 4),
+(17, 'img/Pages/Archive/11.jpg', '', 0, 4),
+(18, 'img/Pages/Archive/12.jpg', '', 0, 4),
+(19, 'img/Pages/Archive/15.jpg', '', 0, 4),
+(20, 'img/Pages/Archive/20.jpg', '', 0, 4),
+(21, 'img/Pages/Archive/21.jpg', '', 0, 4),
+(22, 'img/Pages/Archive/47.jpg', '', 0, 4),
+(23, 'img/Pages/Archive/13.jpg', '', 0, 5),
+(24, 'img/Pages/Archive/14.jpg', '', 0, 5),
+(25, 'img/Pages/Archive/24.jpg', '', 0, 5),
+(26, 'img/Pages/Archive/25.jpg', '', 0, 5),
+(27, 'img/Pages/Archive/26.jpg', '', 0, 5),
+(28, 'img/Pages/Archive/27.jpg', '', 0, 5),
+(29, 'img/Pages/Archive/28.jpg', '', 0, 5),
+(30, 'img/Pages/Archive/32.jpg', '', 0, 5),
+(31, 'img/Pages/Archive/44.jpg', '', 0, 5),
+(32, 'img/Pages/Archive/45.jpg', '', 0, 5),
+(33, 'img/Pages/Archive/46.jpg', '', 0, 5),
+(34, 'img/Pages/Archive/16.jpg', '', 0, 6),
+(35, 'img/Pages/Archive/17.jpg', '', 0, 6),
+(36, 'img/Pages/Archive/18.jpg', '', 0, 6),
+(37, 'img/Pages/Archive/19.jpg', '', 0, 6),
+(38, 'img/Pages/Archive/22.jpg', '', 0, 6),
+(39, 'img/Pages/Archive/23.jpg', '', 0, 6),
+(40, 'img/Pages/Archive/41.jpg', '', 0, 6),
+(41, 'img/Pages/Archive/42.jpg', '', 0, 6),
+(42, 'img/Pages/Archive/43.jpg', '', 0, 6),
+(43, 'img/Pages/Archive/35.jpg', '', 0, 7),
+(44, 'img/Pages/Archive/36.jpg', '', 0, 7),
+(45, 'img/Pages/Archive/37.jpg', '', 0, 7),
+(46, 'img/Pages/Archive/39.jpeg', '', 0, 8),
+(47, 'img/Pages/Archive/40.jpeg', '', 0, 8);
 
 -- --------------------------------------------------------
 
