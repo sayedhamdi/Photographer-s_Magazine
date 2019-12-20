@@ -89,6 +89,17 @@
           <li class="nav-item">
             <a class="nav-link " href="#">Magazine</a>
           </li>
+          
+          <?php
+            if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true){
+              if ($_SESSION['email'] == "admin@root.com" && $_SESSION['id'] == 9  ){
+                echo 
+                '<li class="nav-item">
+                    <a class="nav-link " href="admin-manager-panel.php">Manager</a>
+                  </li>';
+              }
+            }
+          ?>
         </ul>
       </div>
     </div>
