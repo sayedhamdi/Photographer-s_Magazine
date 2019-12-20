@@ -32,7 +32,7 @@
                 <br>
                 <br>
                 <br>
-                <h1 class="Nexa-Bold">Other Informations:</h1>+-
+                <h1 class="Nexa-Bold">Other Informations:</h1>
                 <br>
                 <br>
                 <label for="country"> Country : </label>
