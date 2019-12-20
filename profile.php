@@ -1,6 +1,6 @@
 <?php include "./includes/header.php" ?>
 <div class="container" style="padding: 30px 190px;">
-    <form action="" method="POST">
+    <form action="includes/profile.php" method="POST">
         <h1 class="Nexa-Bold" style='text-align :center;margin-bottom:30px'>Profile </h1>
         <div class="row">
         <?php 
@@ -18,7 +18,7 @@
                     <input type="text" name="lastname" id="lastname" class="form-control" value="<?= $row['lastname'] ?>">
 
                     <label for="email"> E-mail : </label>
-                    <input type="email" name="email" id="email" class="form-control" value="<?= $row['email'] ?>">
+                    <input type="email" name="email" id="email" class="form-control" value="<?= $_SESSION ['email'] ?>">
 
                     <label for="password"> Password : </label>
                     <input type="password" id='password1' name="password1" class="form-control" >
@@ -42,17 +42,16 @@
                 <input type="date" name="date" id="date" class="form-control" max="2019-06-25" value="<?= $row['date'] ?>">
 
                 <label for="level"> Skill - Level : </label>
-                <select name="level" id="level" class="form-control" required>
-                    <option value="beginner">Beginner</option>
-                    <option value="intermediate">Intermediate </option>
-                    <option value="pro">Pro</option>
-                </select>
+                <input type="text" name="level" id="level" class="form-control"  value="<?= $row['level'] ?>" >
             </div>
             
         </div>
         <div class="form-group">
             <br>
-            <input type="submit" name="register" onclick="return validate()" class="form-control sign" Value="Register">
+            <input type="submit" name="update" onclick="return validate()" class="form-control sign" Value="Update">
+            <br>
+            <input type="submit" name="delete"  class="form-control sign" Value="Delete">
+
         </div>
     </form>
 </div>

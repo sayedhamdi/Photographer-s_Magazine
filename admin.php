@@ -1,7 +1,13 @@
 <?php 
+<<<<<<< HEAD
     include 'includes/db_cnx.php' ; 
     $extra_css = '<link href="css/styles/admin.css" rel="stylesheet">';
     include 'includes/header.php'; 
+=======
+    include './includes/db_cnx.php'; 
+    $extra_css = '<link href="css/styles/admin.css" rel="stylesheet">';
+    include './includes/header.php'; 
+>>>>>>> 0572400c90c420d76a06d9d6648bc545c7b094a7
 ?>
 
 <form action="checkbox.php" method="POST">
