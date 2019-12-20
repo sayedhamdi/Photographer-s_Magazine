@@ -12,12 +12,12 @@
             <hr class="archive-sperator-line">
         </div>
         <div class="row text-center">
-        <?php
-            $res = mysqli_query($conn,'select name,photographe.firstname,photographe.lastname from photographe,image
-            where photographe.id = image.owner');
-            $i=1;
-            while($row = mysqli_fetch_array($res)){
-        ?>
+            <?php
+                $res = mysqli_query($conn,'select name,photographe.firstname,photographe.lastname from photographe,image
+                where photographe.id = image.owner and verified = 1');
+                $i=1;
+                while($row = mysqli_fetch_array($res)){
+            ?>
             <div class="col-md-4">
                 <a href='<?php echo $row['name']?> ' target="_blank">
                     <img class="img-responsive lazyestload" src='<?php echo $row['name']?> ' />
@@ -26,9 +26,10 @@
                 <?php echo "".$row['firstname']." ". $row['lastname']?>
                 </h5>
             </div>
-        <?php if($i % 3 == 0) echo('</div>
+        <?php if($i % 3 == 0) echo('
+        </div>
         <div class="row text-center">');
-                $i++;
+            $i++;
         }?>
         </div>
     </div>
