@@ -6,6 +6,8 @@
         <h1>Login</h1>
         <a href=register.php ><h6> You don't have an account ? Signup now</h6></a>
         <hr width=70%>
+        <center id="status"></center>
+
     </div>
     <form action="login.php" method="POST">
         <input placeholder="Email" type="email" name="email" class="form-control" id="email"
@@ -14,10 +16,10 @@
             style="width: 180px;margin: 30px auto;">
 
         <div class="form-group">
-            <input type="submit" name="login" class="form-control login-btn sign" Value="Login">
+            <input type="submit" name="login" class="form-control login-btn sign" Value="Login" onclick="loginPost();">
             <a href=# style="color:gray;text-align:center;font-family:Nexa-Light"><h6 style="margin-top:10px">Password reset</h6></a>
         </div>
     </form>
 </div>
-
+<script src="js/login.js"></script>
 <?php include "./includes/footer.php" ?>

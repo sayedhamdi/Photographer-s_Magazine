@@ -1,12 +1,12 @@
-<?php 
+<?php
     if(!isset($_SESSION["loggedin"]) || !($_SESSION['email'] == "admin@root.com" && $_SESSION['id'] == 8))
         header('HTTP/1.1 404 Not Found');
         http_response_code(404);
         exit;
 
-    include './includes/db_cnx.php'; 
+    include './includes/db_cnx.php';
     $extra_css = '<link href="css/styles/admin.css" rel="stylesheet">';
-    include './includes/header.php'; 
+    include './includes/header.php';
 ?>
 
 <form action="checkbox.php" method="POST">
@@ -16,12 +16,12 @@
                 photographe.id = owner and verified = 0 limit 1");
 
     if (mysqli_num_rows($getAll) > 0){
-        while($row = mysqli_fetch_array($getAll)){    
+        while($row = mysqli_fetch_array($getAll)){
                 echo '
                         <div class="checkdiv" id="'.$row['id'].'">
                             <div class="img-div" style="background-image:url('.$row['name'].')">
                             </div>
-                            
+
                             <div class=img-detail>
                                 <a class=expand href='.$row['name'].' target=_blank>
                                     <img src="img/icons/expand.svg">
@@ -29,7 +29,7 @@
                                     <span class=category>#fashion</span>
                                     <span class=photographe>'.$row['firstname'].' '.$row['lastname'].'</span>
                                     <h5 class=date><span style="font-family:Nexa-Bold">submitted:</span> 20-12-2019</h5>
-                                    
+
                                     <div class="action-btns">
                                         <input type="checkbox" name="'.$row['id'].'" value="'.$row['id'].'" id="add-'.$row['id'].'"  />
                                         <input type="checkbox" name="'.$row['id'].'" value="'.$row['id'].'" id="decline-'.$row['id'].'"  />

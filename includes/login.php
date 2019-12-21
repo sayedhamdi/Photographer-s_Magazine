@@ -17,12 +17,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     if(trim($email)==""){
         $email_err =  "Please enter your email.";
         $valid = false;
-
+        $msg= $email_err;
     }
-
     if(trim($password)==""){
         $password_err = "Please enter your password.";
         $valid = false;
+        $msg= $password_err;
     }
     // Validate credentials
     if($valid){
@@ -33,7 +33,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         if($result->num_rows === 0)
         {
           $email_err = "No account found with that email.";
-          exit('no account found with email');
+           $msg=$email_err;
         }
         while($row = $result->fetch_assoc()) {
             if(password_verify($password, $row['password'])){
@@ -42,10 +42,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
               $_SESSION["loggedin"] = true;
               $_SESSION["id"] = $row['id'];
               $_SESSION["email"] = $email;
-              header("location: index.php");
+              header("location:loginValid.php");
           }
-            else $password_err = "The password you entered was not valid.";
+            else {
+              $password_err = "The password you entered was not valid.";
+              $msg= $password_err;
+            }
         }
       }
+      echo $msg;
 }
 ?>
