@@ -1,12 +1,14 @@
 <?php
-    if(!isset($_SESSION["loggedin"]) || !($_SESSION['email'] == "admin@root.com" && $_SESSION['id'] == 8))
+    if (session_status() == PHP_SESSION_NONE) {@ob_start();session_start();}
+    if(!($_SESSION['email'] == "admin@root.com" )){
+    // && $_SESSION['id'] == 9
         header('HTTP/1.1 404 Not Found');
         http_response_code(404);
         exit;
-
-    include './includes/db_cnx.php';
+    }
     $extra_css = '<link href="css/styles/admin.css" rel="stylesheet">';
-    include './includes/header.php';
+    include "./includes/header.php";
+    include './includes/db_cnx.php';
 ?>
 
 <form action="checkbox.php" method="POST">
