@@ -1,7 +1,7 @@
 <?php
     $servername = "localhost";
     $username = "pulchart_admin";
-    $password = "pulchart_admin_123";
+    $password = "pulchartAdmin123";
     $db_name = "pulchart_pulchart";
 
     // Create connection
