@@ -1,8 +1,8 @@
 <?php
     $servername = "localhost";
-    $username = "root";
+    $username = "pulchart_admin";
     $password = "";
-    $db_name = "pulchart";
+    $db_name = "pulchart_pulchart";
 
     // Create connection
     $conn = mysqli_connect($servername, $username, $password);
