@@ -1,3 +1,19 @@
+$(document).ready(function(){
+  $("#file3").hide();
+
+  $("#liste").change(() =>{
+    let selected = $("#liste option:selected").val()
+    if(selected =="editorial"){
+      console.log(selected)
+      $("#file3").show();
+    }else{
+      $("#file3").hide();
+    }
+  })
+});
+
+
+
 $(function(){
     $("#nom_error").hide();
     $("#prenom_error").hide();

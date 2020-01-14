@@ -302,9 +302,8 @@ input {
 
 .portfolio .container h2
 {
-	position: absolute;
+	position: relative;
 	top:250px;
-	right:200px;
 }
 
 .portfolio .container .description

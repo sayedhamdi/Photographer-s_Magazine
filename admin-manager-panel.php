@@ -15,7 +15,7 @@
     <div class="checkdivs">
         <?php
             $getAll = mysqli_query($conn,"select name,category,photographe.firstname,photographe.lastname,owner,image.id from image,photographe where
-                photographe.id = owner and verified = 0 limit 1");
+                photographe.id = owner and verified = 0 limit 3");
 
     if (mysqli_num_rows($getAll) > 0){
         while($row = mysqli_fetch_array($getAll)){

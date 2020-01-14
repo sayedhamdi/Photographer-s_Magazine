@@ -11,7 +11,7 @@
                 <a href='<?php echo $row['name']?> ' target="_blank">
                     <img class="img-responsive lazyestload" src='<?php echo $row['name']?> ' />
                 </a>
-                <h5>
+                <h5 class="Nexa-Bold">
                 <?php echo "".$row['firstname']." ". $row['lastname']?>
                 </h5>
             </div>

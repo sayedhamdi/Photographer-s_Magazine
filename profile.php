@@ -3,11 +3,15 @@
     <form action="includes/profile.php" method="POST">
         <h1 class="Nexa-Bold" style='text-align :center;margin-bottom:30px'>Profile </h1>
         <div class="row">
-        <?php 
-            $email = $_SESSION ['email'] ; 
-            $req = "SELECT * FROM photographe WHERE email LIKE '$email'" ;
-            $res = mysqli_query ($conn,$req) ;  
-            $row = mysqli_fetch_assoc ($res) ;
+        <?php
+            if (isset($_SESSION ['email'])) {
+              $email = $_SESSION ['email'] ;
+              $req = "SELECT * FROM photographe WHERE email LIKE '$email'" ;
+              $res = mysqli_query ($conn,$req) ;
+              $row = mysqli_fetch_assoc ($res) ;
+            }else{
+              header("location: index.php");
+            }
         ?>
             <div class="col-md-6" style="border-right: 1px solid #00000030;padding: 30px;">
                 <div class="form-group">
@@ -44,7 +48,7 @@
                 <label for="level"> Skill - Level : </label>
                 <input type="text" name="level" id="level" class="form-control"  value="<?= $row['level'] ?>" >
             </div>
-            
+
         </div>
         <div class="form-group">
             <br>

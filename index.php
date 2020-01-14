@@ -30,7 +30,7 @@
         <img src="img/bg-images/first_row.jpg" class="img-fluid" />
       </a>
         <p class="overlay Nexa-Bold">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          PULCHART Magazine First Edition
         </p>
       </div>
 
@@ -40,23 +40,18 @@
 <!-- Exclusive --->
 
 <div class="container exclusive">
-  <div class="row">
-    <div class="col">
-      <h1 class="text-center Nexa-Bold">Exclusive</h1>
-    </div>
-  </div>
+
     <div class="row ">
       <div class="col-12 col-lg-6  col-md-6 col-sm-12">
+        <h2 class="text-center Nexa-Bold">Picture of the week</h2>
       <a href="img/Pages/Acceuil/Hanen BEST OF.jpg" target="_blank">
         <img src="img/Pages/Acceuil/Hanen BEST OF.jpg" class="img-fluid of-the-week" />
       </a>
-        <p class="Nexa-Bold">
-          Picture of the week
-        </p>
+
       </div>
 
       <div class="col-12 col-lg-6 col-md-6  col-sm-12">
-
+        <h2 class="text-center Nexa-Bold">Editorial</h2>
         <div class="row">
           <div class="col">
           <a href="img/Pages/Acceuil/Editorial.jpg" target="_blank">
@@ -104,17 +99,22 @@
   <div class="row  justify-content-md-center">
     <div class="col-12">
       <div class="">
-      <a href="img/bg-images/second_row.jpg" target="_blank">
+      <a href="submission.php" target="_blank">
         <img src="img/bg-images/second_row.jpg" class="img-fluid" />
       </a>
         <p class="overlay Nexa-Bold">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          SUBMISSION
         </p>
       </div>
     </div>
   </div>
 </div>
-<div class="container  Third-Row">
+<div class="container  Third-Row mb-5">
+  <div class="row  justify-content-md-center">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+        <h2 class="text-center Nexa-Bold mt-5 mb-2">Editorial</h2>
+      </div>
+  </div>
   <div class="row  justify-content-md-center">
     <div class="col-lg-5 col-md-5 col-sm-6 col-6">
     <a href="img/bg-images/row_3_1.jpg" target="_blank">

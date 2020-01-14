@@ -8,7 +8,7 @@
   <title>Pulchart Magazine</title>
   <link rel="stylesheet" href="css/styles/bootstrap.min.css" integrity="" crossorigin="anonymous">
   <link  rel="stylesheet" href="css/styles/style.css" integrity="">
-  <?php 
+  <?php
     if(isset($extra_css)) echo $extra_css;
   ?>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,10 +28,10 @@
       <div class="flex-row">
         <ul class="social-nav navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#"> <img src="img/icons/facebook.png" alt="" width="25rem"> </a>
+            <a class="nav-link" href="https://www.facebook.com/pulchartmag/"> <img src="img/icons/facebook.png" alt="" width="25rem"> </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"> <img src="img/icons/insta.png" alt="" width="25rem"> </a>
+            <a class="nav-link" href="http://instagram.com/pulchart_magazine"> <img src="img/icons/insta.png" alt="" width="25rem"> </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#"> <img src="img/icons/youtube.png" alt="" width="25rem"> </a>
@@ -89,11 +89,11 @@
           <li class="nav-item">
             <a class="nav-link " href="#">Magazine</a>
           </li>
-          
+
           <?php
             if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true){
               if ($_SESSION['email'] == "admin@root.com" && $_SESSION['id'] == 9  ){
-                echo 
+                echo
                 '<li class="nav-item">
                     <a class="nav-link " href="admin-manager-panel.php">Manager</a>
                   </li>';
