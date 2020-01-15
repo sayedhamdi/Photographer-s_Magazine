@@ -19,7 +19,7 @@
 <body>
   <!-- navbar start -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-light">
-    <a class="navbar-brand Morva logo" href="../Photographer-s_Magazine">Pulchart</a>
+    <a class="navbar-brand Morva logo" href="../index.php">Pulchart</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -31,10 +31,10 @@
             <a class="nav-link" href="https://www.facebook.com/pulchartmag/"> <img src="img/icons/facebook.png" alt="" width="25rem"> </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="http://instagram.com/pulchart_magazine"> <img src="img/icons/insta.png" alt="" width="25rem"> </a>
+            <a class="nav-link" href="https://instagram.com/pulchart_magazine"> <img src="img/icons/insta.png" alt="" width="25rem"> </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"> <img src="img/icons/youtube.png" alt="" width="25rem"> </a>
+            <a class="nav-link" href="https://www.youtube.com/channel/UCQ3ZFsa7Zo9ckOSrLw9XTIA"> <img src="img/icons/youtube.png" alt="" width="25rem"> </a>
           </li>
           <?php
           if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true )
@@ -61,7 +61,7 @@
       <div class="flex-row">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="../Photographer-s_Magazine">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="../index.php">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
