@@ -103,7 +103,7 @@
         <img src="img/bg-images/second_row.jpg" class="img-fluid" />
       </a>
         <p class="overlay Nexa-Bold">
-          SUBMISSION
+          BEST OF THE MONTH
         </p>
       </div>
     </div>
@@ -112,7 +112,7 @@
 <div class="container  Third-Row mb-5">
   <div class="row  justify-content-md-center">
       <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-        <h2 class="text-center Nexa-Bold mt-5 mb-2">Editorial</h2>
+        <h2 class="text-center Nexa-Bold mt-5 mb-2">SUBMISSION</h2>
       </div>
   </div>
   <div class="row  justify-content-md-center">
