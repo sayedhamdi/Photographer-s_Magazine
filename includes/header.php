@@ -28,13 +28,13 @@
       <div class="flex-row">
         <ul class="social-nav navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="https://www.facebook.com/pulchartmag/"> <img src="img/icons/facebook.png" alt="" width="25rem"> </a>
+            <a class="nav-link" href="https://www.facebook.com/pulchartmag/" target="_blank"> <img src="img/icons/facebook.png" alt="" width="25rem"> </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://instagram.com/pulchart_magazine"> <img src="img/icons/insta.png" alt="" width="25rem"> </a>
+            <a class="nav-link" href="https://instagram.com/pulchart_magazine" target="_blank"> <img src="img/icons/insta.png" alt="" width="25rem"> </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://www.youtube.com/channel/UCQ3ZFsa7Zo9ckOSrLw9XTIA"> <img src="img/icons/youtube.png" alt="" width="25rem"> </a>
+            <a class="nav-link" href="https://www.youtube.com/channel/UCQ3ZFsa7Zo9ckOSrLw9XTIA" target="_blank"> <img src="img/icons/youtube.png" alt="" width="25rem"> </a>
           </li>
           <?php
           if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true )
