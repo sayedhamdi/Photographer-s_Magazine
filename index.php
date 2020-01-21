@@ -103,7 +103,7 @@
         <img src="img/bg-images/second_row.jpg" class="img-fluid" />
       </a>
         <p class="overlay Nexa-Bold">
-          BEST OF THE MONTH
+          PICTURE OF THE MONTH
         </p>
       </div>
     </div>
